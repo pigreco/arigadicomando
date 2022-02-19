@@ -1,0 +1,3524 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Quanto è comoda la riga di comando con i dati">
+      
+      
+      
+        <link rel="canonical" href="https://arigadicomando.it/miller/verbi/">
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
+    
+    
+      
+        <title>Verbi - a riga di comando</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e8d9bf0c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700%7CFira+Code&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<!-- Open Graph / Facebook -->
+    
+        <meta property="og:title" content="Verbi" />
+    
+
+    
+        <meta property="og:type" content="website" />
+    
+
+        <meta property="og:url" content="https://arigadicomando.it/miller/verbi/" />
+
+    
+        <meta property="og:image:url" content="https://arigadicomando.it/images/preview.png" />
+    
+
+    
+        <meta property="og:image:type" content="image/png" />
+    
+
+    
+        <meta property="og:description" content="Quanto è comoda la riga di comando con i dati">
+    
+
+
+<!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://arigadicomando.it/miller/verbi/">
+    
+        <meta property="twitter:title" content="Verbi">
+    
+    
+        <meta property="twitter:description" content="Quanto è comoda la riga di comando con i dati">
+    
+
+    
+        <meta property="twitter:image" content="https://arigadicomando.it/images/preview.png">
+    
+
+        <meta property="og:locale" content="it-IT" />
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#verbi" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+  <!-- Add announcement here, including arbitrary HTML -->
+  <p>Iscriviti alla <b><a style="color:#ff9100 !important;" href="https://www.getrevue.co/profile/ondata">newsletter di onData</a></b>
+    <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>
+    </span>
+  </p>
+
+          </div>
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="a riga di comando" class="md-header__button md-logo" aria-label="a riga di comando" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M9.372 86.63c-12.496-12.5-12.496-32.76 0-45.26 12.498-12.49 32.758-12.49 45.258 0L246.6 233.4c12.5 12.5 12.5 32.7 0 45.2l-191.97 192c-12.5 12.5-32.76 12.5-45.258 0-12.496-12.5-12.496-32.7 0-45.2L178.7 256 9.372 86.63zM544 416c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h288z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            a riga di comando
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Verbi
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="preference" data-md-color-primary="blue" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Cancella" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/aborruso/arigadicomando/" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arigadicomando
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../cli/" class="md-tabs__link">
+      La CLI
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dati/" class="md-tabs__link">
+        Dati
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../monografie/" class="md-tabs__link md-tabs__link--active">
+        Monografie
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../partecipa/" class="md-tabs__link">
+      Partecipa
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../utilities/" class="md-tabs__link">
+      Utility
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../letture/" class="md-tabs__link">
+      Letture
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../grazie/" class="md-tabs__link">
+      Grazie
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="a riga di comando" class="md-nav__button md-logo" aria-label="a riga di comando" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M9.372 86.63c-12.496-12.5-12.496-32.76 0-45.26 12.498-12.49 32.758-12.49 45.258 0L246.6 233.4c12.5 12.5 12.5 32.7 0 45.2l-191.97 192c-12.5 12.5-32.76 12.5-45.258 0-12.496-12.5-12.496-32.7 0-45.2L178.7 256 9.372 86.63zM544 416c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h288z"/></svg>
+
+    </a>
+    a riga di comando
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/aborruso/arigadicomando/" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arigadicomando
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli/" class="md-nav__link">
+        La CLI
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../dati/">Dati</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Dati" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Dati
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dati/esplora/" class="md-nav__link">
+        Esplora
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dati/converti/" class="md-nav__link">
+        Converti
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dati/trasforma/" class="md-nav__link">
+        Trasforma
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Monografie
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Monografie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Monografie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../monografie/" class="md-nav__link">
+        Introduzione
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Miller</a>
+          
+            <label for="__nav_4_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Miller" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Miller
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_2" type="checkbox" id="__nav_4_2_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_2">
+          Formati
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Formati" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Formati
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../formati/" class="md-nav__link">
+        Gestione formati
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eterogeneita_record/" class="md-nav__link">
+        Eterogeneità record
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flag/" class="md-nav__link">
+        Flag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Verbi
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Verbi
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-di-esempio" class="md-nav__link">
+    File di esempio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guida-in-linea-per-un-verbo" class="md-nav__link">
+    Guida in linea per un verbo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-dei-verbi" class="md-nav__link">
+    Lista dei verbi
+  </a>
+  
+    <nav class="md-nav" aria-label="Lista dei verbi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altkv" class="md-nav__link">
+    altkv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bar" class="md-nav__link">
+    bar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    bootstrap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cat" class="md-nav__link">
+    cat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check" class="md-nav__link">
+    check
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean-whitespace" class="md-nav__link">
+    clean-whitespace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count" class="md-nav__link">
+    count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count-distinct" class="md-nav__link">
+    count-distinct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count-similar" class="md-nav__link">
+    count-similar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cut" class="md-nav__link">
+    cut
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decimate" class="md-nav__link">
+    decimate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill-down" class="md-nav__link">
+    fill-down
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill-empty" class="md-nav__link">
+    fill-empty
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flatten" class="md-nav__link">
+    flatten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-values" class="md-nav__link">
+    format-values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fraction" class="md-nav__link">
+    fraction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap" class="md-nav__link">
+    gap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grep" class="md-nav__link">
+    grep
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-by" class="md-nav__link">
+    group-by
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-like" class="md-nav__link">
+    group-like
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#having-fields" class="md-nav__link">
+    having-fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head" class="md-nav__link">
+    head
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#histogram" class="md-nav__link">
+    histogram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-parse" class="md-nav__link">
+    json-parse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-stringify" class="md-nav__link">
+    json-stringify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join" class="md-nav__link">
+    join
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label" class="md-nav__link">
+    label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#least-frequent" class="md-nav__link">
+    least-frequent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-fields" class="md-nav__link">
+    merge-fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#most-frequent" class="md-nav__link">
+    most-frequent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nest" class="md-nav__link">
+    nest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nothing" class="md-nav__link">
+    nothing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put" class="md-nav__link">
+    put
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regularize" class="md-nav__link">
+    regularize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-empty-columns" class="md-nav__link">
+    remove-empty-columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename" class="md-nav__link">
+    rename
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reorder" class="md-nav__link">
+    reorder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeat" class="md-nav__link">
+    repeat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reshape" class="md-nav__link">
+    reshape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample" class="md-nav__link">
+    sample
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec2gmtdate" class="md-nav__link">
+    sec2gmtdate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec2gmt" class="md-nav__link">
+    sec2gmt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seqgen" class="md-nav__link">
+    seqgen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuffle" class="md-nav__link">
+    shuffle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip-trivial-records" class="md-nav__link">
+    skip-trivial-records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    sort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort-within-records" class="md-nav__link">
+    sort-within-records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stats1" class="md-nav__link">
+    stats1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stats2" class="md-nav__link">
+    stats2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step" class="md-nav__link">
+    step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tac" class="md-nav__link">
+    tac
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tail" class="md-nav__link">
+    tail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tee" class="md-nav__link">
+    tee
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template" class="md-nav__link">
+    template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top" class="md-nav__link">
+    top
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unflatten" class="md-nav__link">
+    unflatten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uniq" class="md-nav__link">
+    uniq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsparsify" class="md-nav__link">
+    unsparsify
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsl/" class="md-nav__link">
+        DSL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ricette/" class="md-nav__link">
+        Ricette
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributi/" class="md-nav__link">
+        Contributi
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../partecipa/" class="md-nav__link">
+        Partecipa
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utilities/" class="md-nav__link">
+        Utility
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../letture/" class="md-nav__link">
+        Letture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../grazie/" class="md-nav__link">
+        Grazie
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-di-esempio" class="md-nav__link">
+    File di esempio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guida-in-linea-per-un-verbo" class="md-nav__link">
+    Guida in linea per un verbo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-dei-verbi" class="md-nav__link">
+    Lista dei verbi
+  </a>
+  
+    <nav class="md-nav" aria-label="Lista dei verbi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#altkv" class="md-nav__link">
+    altkv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bar" class="md-nav__link">
+    bar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    bootstrap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cat" class="md-nav__link">
+    cat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check" class="md-nav__link">
+    check
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean-whitespace" class="md-nav__link">
+    clean-whitespace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count" class="md-nav__link">
+    count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count-distinct" class="md-nav__link">
+    count-distinct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count-similar" class="md-nav__link">
+    count-similar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cut" class="md-nav__link">
+    cut
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decimate" class="md-nav__link">
+    decimate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill-down" class="md-nav__link">
+    fill-down
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill-empty" class="md-nav__link">
+    fill-empty
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flatten" class="md-nav__link">
+    flatten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-values" class="md-nav__link">
+    format-values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fraction" class="md-nav__link">
+    fraction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap" class="md-nav__link">
+    gap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grep" class="md-nav__link">
+    grep
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-by" class="md-nav__link">
+    group-by
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-like" class="md-nav__link">
+    group-like
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#having-fields" class="md-nav__link">
+    having-fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head" class="md-nav__link">
+    head
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#histogram" class="md-nav__link">
+    histogram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-parse" class="md-nav__link">
+    json-parse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-stringify" class="md-nav__link">
+    json-stringify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join" class="md-nav__link">
+    join
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label" class="md-nav__link">
+    label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#least-frequent" class="md-nav__link">
+    least-frequent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-fields" class="md-nav__link">
+    merge-fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#most-frequent" class="md-nav__link">
+    most-frequent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nest" class="md-nav__link">
+    nest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nothing" class="md-nav__link">
+    nothing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put" class="md-nav__link">
+    put
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regularize" class="md-nav__link">
+    regularize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-empty-columns" class="md-nav__link">
+    remove-empty-columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename" class="md-nav__link">
+    rename
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reorder" class="md-nav__link">
+    reorder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeat" class="md-nav__link">
+    repeat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reshape" class="md-nav__link">
+    reshape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample" class="md-nav__link">
+    sample
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec2gmtdate" class="md-nav__link">
+    sec2gmtdate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sec2gmt" class="md-nav__link">
+    sec2gmt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seqgen" class="md-nav__link">
+    seqgen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuffle" class="md-nav__link">
+    shuffle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip-trivial-records" class="md-nav__link">
+    skip-trivial-records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    sort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort-within-records" class="md-nav__link">
+    sort-within-records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stats1" class="md-nav__link">
+    stats1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stats2" class="md-nav__link">
+    stats2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step" class="md-nav__link">
+    step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tac" class="md-nav__link">
+    tac
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tail" class="md-nav__link">
+    tail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tee" class="md-nav__link">
+    tee
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template" class="md-nav__link">
+    template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top" class="md-nav__link">
+    top
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unflatten" class="md-nav__link">
+    unflatten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uniq" class="md-nav__link">
+    uniq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsparsify" class="md-nav__link">
+    unsparsify
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/aborruso/arigadicomando/edit/master/docs/miller/verbi.md" title="Modifica" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+  
+
+
+
+<h1 id="verbi">Verbi<a class="headerlink" href="#verbi" title="Permanent link">&para;</a></h1>
+<p>I verbi sono i sub comandi di Miller. Queste le categorie:</p>
+<ul>
+<li>quelli analoghi allo Unix-toolkit: <a href="#cat">cat</a>, <a href="#cut">cut</a>, <a href="#grep">grep</a>, <a href="#head">head</a>, <a href="#join">join</a>, <a href="#sort">sort</a>, <a href="#tac">tac</a>, <a href="#tail">tail</a>, <a href="#top">top</a>, <a href="#uniq">uniq</a>.</li>
+<li>quelli con funziolità simili a quelli di <code>awk</code>: <a href="#filter">filter</a>, <a href="#put">put</a>, <a href="#sec2gmt">sec2gmt</a>, <a href="#sec2gmtdate">sec2gmtdate</a>, <a href="#step">step</a>, <a href="#tee">tee</a>.</li>
+<li>quelli statistici: <a href="#bar">bar</a>, <a href="#bootstrap">bootstrap</a>, <a href="#decimate">decimate</a>, <a href="#histogram">histogram</a>, <a href="#least-frequent">least-frequent</a>, <a href="#most-frequent">most-frequent</a>, <a href="#sample">sample</a>, <a href="#shuffle">shuffle</a>, <a href="#stats1">stats1</a>, <a href="#stats2">stats2</a>.</li>
+<li>quelli orientati all'<a href="../eterogeneita_record/">eterogeneità dei record</a>, sebbene tutti i verbi di Miller sono in grado di gestire record eterogenei: <a href="#group-by">group-by</a>, <a href="#group-like">group-like</a>, <a href="#having-fields">having-fields</a>.</li>
+<li>e altri ancora: <a href="#check">check</a>, <a href="#count-distinct">count-distinct</a>, <a href="#label">label</a>, <a href="#merge-fields">merge-fields</a>, <a href="#nest">nest</a>, <a href="#nothing">nothing</a>, <a href="#regularize">regularize</a>, <a href="#rename">rename</a>, <a href="#reorder">reorder</a>, <a href="#reshape">reshape</a>, <a href="#seqgen">seqgen</a>.</li>
+</ul>
+<h2 id="file-di-esempio">File di esempio<a class="headerlink" href="#file-di-esempio" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">File per sviluppare esempi</p>
+<p>Per la gran parte degli esempi sviluppati in questa pagina, verrà usato il file <a href="../risorse/base_category.csv"><code>base_category.csv</code></a> (vedi sotto).<br>
+È stato scelto un file piccolo e semplice, per ragioni didattiche e di leggibilità.</p>
+<table>
+<thead>
+<tr>
+<th>nome</th>
+<th>dataNascita</th>
+<th>altezza</th>
+<th>peso</th>
+<th>comuneNascita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>andy</td>
+<td>1973-05-08</td>
+<td>176</td>
+<td>86.5</td>
+<td>Roma</td>
+</tr>
+<tr>
+<td>chiara</td>
+<td>1993-12-13</td>
+<td>162</td>
+<td>58.3</td>
+<td>Milano</td>
+</tr>
+<tr>
+<td>guido</td>
+<td>2001-01-22</td>
+<td>196</td>
+<td>90.4</td>
+<td>Roma</td>
+</tr>
+<tr>
+<td>sara</td>
+<td>2000-02-22</td>
+<td>166</td>
+<td>70.4</td>
+<td>Roma</td>
+</tr>
+<tr>
+<td>giulia</td>
+<td>1997-08-13</td>
+<td>169</td>
+<td>68.3</td>
+<td>Milano</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="highlight"><span class="filename">base_category.csv</span><pre><span></span><code>nome,dataNascita,altezza,peso,comuneNascita
+andy,1973-05-08,176,86.5,Roma
+chiara,1993-12-13,162,58.3,Milano
+guido,2001-01-22,196,90.4,Roma
+sara,2000-02-22,166,70.4,Roma
+giulia,1997-08-13,169,68.3,Milano
+</code></pre></div>
+<h2 id="guida-in-linea-per-un-verbo">Guida in linea per un verbo<a class="headerlink" href="#guida-in-linea-per-un-verbo" title="Permanent link">&para;</a></h2>
+<p>Per aprire la guida in linea di un verbo, basta lanciare <code>mlr nomeVerbo --help</code>. Ad esempio per il verbo <code>cat</code>, il comando <code>mlr cat --help</code> restituirà:</p>
+<div class="highlight"><pre><span></span><code>Usage: mlr cat [options]
+Passes input records directly to output. Most useful for format conversion.
+Options:
+-n        Prepend field &quot;n&quot; to each record with record-counter starting at 1
+-g {comma-separated field name(s)} When used with -n/-N, writes record-counters
+          keyed by specified field name(s).
+-v        Write a low-level record-structure dump to stderr.
+-N {name} Prepend field {name} to each record with record-counter starting at 1
+</code></pre></div>
+<p>A seguire, per ogni verbo, sarà inserito l'<em>help</em> ufficiale di ogni comando.</p>
+<h2 id="lista-dei-verbi">Lista dei verbi<a class="headerlink" href="#lista-dei-verbi" title="Permanent link">&para;</a></h2>
+<h3 id="altkv">altkv<a class="headerlink" href="#altkv" title="Permanent link">&para;</a></h3>
+<p>Mappa una lista di valori, come coppie alternate chiave/valore.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr altkv --help</p>
+<div class="highlight"><pre><span></span><code>Usage: mlr altkv [options]
+Given fields with values of the form a,b,c,d,e,f emits a=b,c=d,e=f pairs.
+</code></pre></div>
+</div>
+<p>Ad esempio</p>
+<div class="admonition comando">
+<p class="admonition-title">echo "a,b,c,d" | mlr --ocsv altkv</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;a&quot;</span><span class="p">:</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="nt">&quot;c&quot;</span><span class="p">:</span><span class="s2">&quot;d&quot;</span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+<h3 id="bar">bar<a class="headerlink" href="#bar" title="Permanent link">&para;</a></h3>
+<p>Per creare dei grafici a barre (bruttini 🙃), rimpiazzando dei valori numeri con una serie di asterichi. Per allinearli meglio si possono usare le opzioni di output <code>--opprint</code> o <code>--oxtab</code>.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr bar --help</p>
+<div class="highlight"><pre><span></span><code>Replaces a numeric field with a number of asterisks, allowing for cheesy
+bar plots. These align best with --opprint or --oxtab output format.
+Options:
+-f   {a,b,c}      Field names to convert to bars.
+--lo {lo}         Lower-limit value for min-width bar: default &#39;0.000000&#39;.
+--hi {hi}         Upper-limit value for max-width bar: default &#39;100.000000&#39;.
+-w   {n}          Bar-field width: default &#39;40&#39;.
+--auto            Automatically computes limits, ignoring --lo and --hi.
+                Holds all records in memory before producing any output.
+-c   {character}  Fill character: default &#39;*&#39;.
+-x   {character}  Out-of-bounds character: default &#39;#&#39;.
+-b   {character}  Blank character: default &#39;.&#39;.
+Nominally the fill, out-of-bounds, and blank characters will be strings of length 1.
+However you can make them all longer if you so desire.
+</code></pre></div>
+</div>
+<p>A partire ad esempio da questo file di input:</p>
+<div class="highlight"><span class="filename">bar.csv</span><pre><span></span><code>Area,percUtenti
+Nord,25
+Centro,32
+Sud e isole,43
+</code></pre></div>
+<div class="admonition comando">
+<p class="admonition-title">mlr --c2p bar -f percUtenti ./bar.csv</p>
+<div class="highlight"><pre><span></span><code>Area        percUtenti
+Nord        **********..............................
+Centro      ************............................
+Sud e isole *****************.......................
+</code></pre></div>
+</div>
+<h3 id="bootstrap">bootstrap<a class="headerlink" href="#bootstrap" title="Permanent link">&para;</a></h3>
+<p>L'uso tipico di <code>bootstrap</code> è quello di estrarre un campione <em>random</em> dall'input, con un numero di record pari al numero record di input; con doppioni possibili.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr bootstrap --help</p>
+<div class="highlight"><pre><span></span><code>Emits an n-sample, with replacement, of the input records.
+See also mlr sample and mlr shuffle.
+Options:
+ -n Number of samples to output. Defaults to number of input records.
+    Must be non-negative.
+</code></pre></div>
+</div>
+<p>Sotto un esempio in cui a partire dal file di input, composto da 5 record distinti, sono estratti in modo randomico 5 record.</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv bootstrap base_category.csv</p>
+<div class="highlight"><pre><span></span><code>nome,dataNascita,altezza,peso,comuneNascita
+guido,2001-01-22,196,90.4,Roma
+chiara,1993-12-13,162,58.3,Milano
+chiara,1993-12-13,162,58.3,Milano
+guido,2001-01-22,196,90.4,Roma
+chiara,1993-12-13,162,58.3,Milano
+</code></pre></div>
+</div>
+<h3 id="cat">cat<a class="headerlink" href="#cat" title="Permanent link">&para;</a></h3>
+<p>Utile sopratutto per conversione di formato (vedi <a href="../formati/">formati</a>) e per concatenare in "verticale" file con lo stesso schema (<img alt="🍳" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f373.svg" title=":cooking:" /> <a href="../ricette/#concatenare-in-verticale-piu-file">ricetta</a>).</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr cat --help</p>
+<div class="highlight"><pre><span></span><code>Usage: mlr cat [options]
+Passes input records directly to output. Most useful for format conversion.
+Options:
+-n        Prepend field &quot;n&quot; to each record with record-counter starting at 1
+-g {comma-separated field name(s)} When used with -n/-N, writes record-counters
+          keyed by specified field name(s).
+-v        Write a low-level record-structure dump to stderr.
+-N {name} Prepend field {name} to each record with record-counter starting at 1
+</code></pre></div>
+</div>
+<p>Il comando di base stampa a schermo il contenuto di un file:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv cat base_category.csv</p>
+<div class="highlight"><pre><span></span><code>nome,dataNascita,altezza,peso,comuneNascita
+andy,1973-05-08,176,86.5,Roma
+chiara,1993-12-13,162,58.3,Milano
+guido,2001-01-22,196,90.4,Roma
+sara,2000-02-22,166,70.4,Roma
+giulia,1997-08-13,169,68.3,Milano
+</code></pre></div>
+</div>
+<p>Con l'opzione <code>-n</code> si aggiunge un campo con un progressivo numerico intero che parte da <code>1</code>:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv -n cat base.csv</p>
+<div class="highlight"><pre><span></span><code>n,nome,dataNascita,altezza,peso,comuneNascita
+1,andy,1973-05-08,176,86.5,Roma
+2,chiara,1993-12-13,162,58.3,Milano
+3,guido,2001-01-22,196,90.4,Roma
+4,sara,2000-02-22,166,70.4,Roma
+5,giulia,1997-08-13,169,68.3,Milano
+</code></pre></div>
+</div>
+<p>Se all'opzione <code>-n</code> si aggiunge <code>-g</code> seguito da dal nome di uno o più campi, il "contatore" sarà applicato per gruppo e partirà da <code>1</code> distintamente per ogni gruppo. Qui sotto ad esempio il raggruppamento è fatto per <code>comuneNascita</code>:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv cat -n -g comuneNascita base_category.csv</p>
+<div class="highlight"><pre><span></span><code>n,nome,dataNascita,altezza,peso,comuneNascita
+1,andy,1973-05-08,176,86.5,Roma
+1,chiara,1993-12-13,162,58.3,Milano
+2,guido,2001-01-22,196,90.4,Roma
+3,sara,2000-02-22,166,70.4,Roma
+2,giulia,1997-08-13,169,68.3,Milano
+</code></pre></div>
+</div>
+<h3 id="check">check<a class="headerlink" href="#check" title="Permanent link">&para;</a></h3>
+<p>È un verbo che non produce un output, salvo un report sulla correttezza di "formattazione" del file di input.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr check --help</p>
+<div class="highlight"><pre><span></span><code>Consumes records without printing any output.
+Useful for doing a well-formatted check on input data.
+Options:
+</code></pre></div>
+</div>
+<p>Se ad esempio si ha un file <code>CSV</code>, con un numero di campi nell'intestazione (<code>4</code>) diverso da quello del corpo (<code>5</code>), come questo</p>
+<div class="highlight"><span class="filename">check.csv</span><pre><span></span><code>nome,dataNascita,altezza,comuneNascita
+andy,1973-05-08,176,86.5,Roma
+chiara,1993-12-13,162,58.3,Milano
+guido,2001-01-22,196,90.4,Roma
+</code></pre></div>
+<p>si avrà l'output sottostante</p>
+<div class="admonition comando">
+<p class="admonition-title"> mlr --csv check check.csv</p>
+<div class="highlight"><pre><span></span><code>mlr :  mlr: CSV header/data length mismatch 4 != 5 at filename ./check.csv row 2.
+</code></pre></div>
+</div>
+<h3 id="clean-whitespace">clean-whitespace<a class="headerlink" href="#clean-whitespace" title="Permanent link">&para;</a></h3>
+<p>È un prezioso comando, per "pulire" i dati: rimuove gli spazi ridondanti.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr clean-whitespace --help</p>
+<div class="highlight"><pre><span></span><code>For each record, for each field in the record, whitespace-cleans the keys and/or
+values. Whitespace-cleaning entails stripping leading and trailing whitespace,
+and replacing multiple whitespace with singles. For finer-grained control,
+please see the DSL functions lstrip, rstrip, strip, collapse_whitespace,
+and clean_whitespace.
+
+Options:
+-k|--keys-only    Do not touch values.
+-v|--values-only  Do not touch keys.
+It is an error to specify -k as well as -v -- to clean keys and values,
+leave off -k as well as -v.
+</code></pre></div>
+</div>
+<p>Riuove in particolare uno o più spazi bianchi a inizio e fine cella e due o più spazi all'interndo della cella. Ad esempio nel file sottostante ci sono due spazi tra <code>Busto</code> e <code>Arsizio</code>, uno spazio a fine cella dopo <code>andy</code> e uno a inizio cella i corrispondenza di <code>chiara</code>. Questi sono ridondanti, e nella grandissima parte dei casi sono da rimuovere.</p>
+<div class="highlight"><span class="filename">clean-whitespace.json</span><pre><span></span><code><span class="p">{</span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;andy &quot;</span><span class="p">,</span><span class="nt">&quot;dataNascita&quot;</span><span class="p">:</span><span class="s2">&quot;1973-05-08&quot;</span><span class="p">,</span><span class="nt">&quot;comuneNascita&quot;</span><span class="p">:</span><span class="s2">&quot;Roma&quot;</span><span class="p">}</span><span class="w"></span>
+<span class="p">{</span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot; chiara&quot;</span><span class="p">,</span><span class="nt">&quot;dataNascita&quot;</span><span class="p">:</span><span class="s2">&quot;1993-12-13&quot;</span><span class="p">,</span><span class="nt">&quot;comuneNascita&quot;</span><span class="p">:</span><span class="s2">&quot;Busto  Arsizio&quot;</span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Per pulire il file:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --json clean-whitespace input.json</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;andy&quot;</span><span class="p">,</span><span class="nt">&quot;dataNascita&quot;</span><span class="p">:</span><span class="s2">&quot;1973-05-08&quot;</span><span class="p">,</span><span class="nt">&quot;comuneNascita&quot;</span><span class="p">:</span><span class="s2">&quot;Roma&quot;</span><span class="p">}</span><span class="w"></span>
+<span class="p">{</span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;chiara&quot;</span><span class="p">,</span><span class="nt">&quot;dataNascita&quot;</span><span class="p">:</span><span class="s2">&quot;1993-12-13&quot;</span><span class="p">,</span><span class="nt">&quot;comuneNascita&quot;</span><span class="p">:</span><span class="s2">&quot;Busto Arsizio&quot;</span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+<p>Due comode opzioni:</p>
+<ul>
+<li><code>-k</code> fa la pulizia soltanto nei nomi dei campi, nelle chiavi;</li>
+<li><code>-v</code> fa la pulizia soltanto nei valori.</li>
+</ul>
+<h3 id="count">count<a class="headerlink" href="#count" title="Permanent link">&para;</a></h3>
+<p>Restituisce il numero di record. Miller tiene conto del formato, quindi per un CSV composto da 6 righe, 1 di intestazione più 5 di dati, restituirà 5.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr count --help</p>
+<div class="highlight"><pre><span></span><code>Prints number of records, optionally grouped by distinct values for specified field names.
+Options:
+-g {a,b,c} Optional group-by-field names for counts, e.g. a,b,c
+-n {n} Show only the number of distinct values. Not interesting without -g.
+-o {name} Field name for output-count. Default &quot;count&quot;.
+</code></pre></div>
+</div>
+<p>File di esempio:</p>
+<div class="highlight"><span class="filename">base_category.csv</span><pre><span></span><code>nome,dataNascita,altezza,peso,comuneNascita
+andy,1973-05-08,176,86.5,Roma
+chiara,1993-12-13,162,58.3,Milano
+guido,2001-01-22,196,90.4,Roma
+sara,2000-02-22,166,70.4,Roma
+giulia,1997-08-13,169,68.3,Milano
+</code></pre></div>
+<p>Comando di esempio:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv count ./base_category.csv</p>
+<div class="highlight"><pre><span></span><code>count
+5
+</code></pre></div>
+</div>
+<p>Se si desidera soltanto l'output numerico, senza riga di intestazione, si può fare in tantissimi modi. Uno è quello di cambiare il formato di output in <a href="../formati/#nidx-index-numbered">NIDX</a>:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --c2n count ./base_category.csv</p>
+<div class="highlight"><pre><span></span><code>5
+</code></pre></div>
+</div>
+<h3 id="count-distinct">count-distinct<a class="headerlink" href="#count-distinct" title="Permanent link">&para;</a></h3>
+<p>Restituisce il numero di record che hanno valori distinti, per uno o più campi specificati.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr count-distinct --help</p>
+<div class="highlight"><pre><span></span><code>Prints number of records having distinct values for specified field names.
+Same as uniq -c.
+
+Options:
+-f {a,b,c}    Field names for distinct count.
+-n            Show only the number of distinct values. Not compatible with -u.
+-o {name}     Field name for output count. Default &quot;count&quot;.
+              Ignored with -u.
+-u            Do unlashed counts for multiple field names. With -f a,b and
+              without -u, computes counts for distinct combinations of a
+              and b field values. With -f a,b and with -u, computes counts
+              for distinct a field values and counts for distinct b field
+              values separately.
+</code></pre></div>
+</div>
+<p>File di esempio:</p>
+<div class="highlight"><span class="filename">count-distinct.csv</span><pre><span></span><code>nome,dataNascita,altezza,peso,comuneNascita,sesso
+andy,1973-05-08,176,86.5,Roma,maschio
+chiara,1993-12-13,162,58.3,Milano,femmina
+guido,2001-01-22,196,90.4,Roma,maschio
+sara,2000-02-22,166,70.4,Roma,femmina
+giulia,1997-08-13,169,68.3,Milano,femmina
+</code></pre></div>
+<p>Ad esempio il conteggio per combinazioni distinte di comune di nascita e sesso:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv count-distinct -f comuneNascita,sesso -o conteggio ./base_category.csv</p>
+<div class="highlight"><pre><span></span><code>comuneNascita,sesso,conteggio
+Roma,maschio,2
+Milano,femmina,2
+Roma,femmina,1
+</code></pre></div>
+</div>
+<p>Aggiungendo il parametro <code>-u</code>, si ottengono i valori distinti non per combinazioni distinti dei campi indicati, ma per ogni singolo campo.</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv count-distinct -f comuneNascita,sesso -o conteggio -u ./base_category.csv</p>
+<div class="highlight"><pre><span></span><code>field,value,count
+comuneNascita,Roma,3
+comuneNascita,Milano,2
+sesso,maschio,2
+sesso,femmina,3
+</code></pre></div>
+</div>
+<h3 id="count-similar">count-similar<a class="headerlink" href="#count-similar" title="Permanent link">&para;</a></h3>
+<p>Aggiunge un campo, con il conteggio dei record che ha lo stesso valore per uno o più campi.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr count-similar --help</p>
+<div class="highlight"><pre><span></span><code>Ingests all records, then emits each record augmented by a count of
+the number of other records having the same group-by field values.
+Options:
+-g {a,b,c} Group-by-field names for counts, e.g. a,b,c
+-o {name} Field name for output-counts. Defaults to &quot;count&quot;.
+</code></pre></div>
+</div>
+<p>File di esempio:</p>
+<div class="highlight"><span class="filename">base_category.csv</span><pre><span></span><code>nome,dataNascita,altezza,peso,comuneNascita
+andy,1973-05-08,176,86.5,Roma
+chiara,1993-12-13,162,58.3,Milano
+guido,2001-01-22,196,90.4,Roma
+sara,2000-02-22,166,70.4,Roma
+giulia,1997-08-13,169,68.3,Milano
+</code></pre></div>
+<p>A seguire ad esempio viene aggiunto il campo <code>conteggio</code> al file di input, con il conteggio dei valori distinti per il campo <code>comuneNascita</code>.</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv count-similar -g comuneNascita -o conteggio ./base_category.csv</p>
+<div class="highlight"><pre><span></span><code>nome,dataNascita,altezza,peso,comuneNascita,conteggio
+andy,1973-05-08,176,86.5,Roma,3
+guido,2001-01-22,196,90.4,Roma,3
+sara,2000-02-22,166,70.4,Roma,3
+chiara,1993-12-13,162,58.3,Milano,2
+giulia,1997-08-13,169,68.3,Milano,2
+</code></pre></div>
+</div>
+<h3 id="cut">cut<a class="headerlink" href="#cut" title="Permanent link">&para;</a></h3>
+<p>Estrae/rimuove dall'input uno o più campi.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr cut --help</p>
+<div class="highlight"><pre><span></span><code>Passes through input records with specified fields included/excluded.
+Options:
+ -f {a,b,c} Comma-separated field names for cut, e.g. a,b,c.
+ -o Retain fields in the order specified here in the argument list.
+    Default is to retain them in the order found in the input data.
+ -x|--complement  Exclude, rather than include, field names specified by -f.
+ -r Treat field names as regular expressions. &quot;ab&quot;, &quot;a.*b&quot; will
+   match any field name containing the substring &quot;ab&quot; or matching
+   &quot;a.*b&quot;, respectively; anchors of the form &quot;^ab$&quot;, &quot;^a.*b$&quot; may
+   be used. The -o flag is ignored when -r is present.
+Examples:
+  mlr cut -f hostname,status
+  mlr cut -x -f hostname,status
+  mlr cut -r -f &#39;^status$,sda[0-9]&#39;
+  mlr cut -r -f &#39;^status$,&quot;sda[0-9]&quot;&#39;
+  mlr cut -r -f &#39;^status$,&quot;sda[0-9]&quot;i&#39; (this is case-insensitive)
+</code></pre></div>
+</div>
+<p>File di esempio:</p>
+<div class="highlight"><span class="filename">base_category.csv</span><pre><span></span><code>nome,dataNascita,altezza,peso,comuneNascita
+andy,1973-05-08,176,86.5,Roma
+chiara,1993-12-13,162,58.3,Milano
+guido,2001-01-22,196,90.4,Roma
+sara,2000-02-22,166,70.4,Roma
+giulia,1997-08-13,169,68.3,Milano
+</code></pre></div>
+<p>Per estrarre soltanto il campo <code>nome</code>:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv cut -f nome base_category.csv</p>
+<div class="highlight"><pre><span></span><code>nome
+andy
+chiara
+guido
+sara
+giulia
+</code></pre></div>
+</div>
+<p>Per rimuovere il campo <code>nome</code>, bisognerà aggiungere l'opzione <code>-x</code>:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv cut -x -f nome base_category.csv</p>
+<div class="highlight"><pre><span></span><code>dataNascita,altezza,peso,comuneNascita
+1973-05-08,176,86.5,Roma
+1993-12-13,162,58.3,Milano
+2001-01-22,196,90.4,Roma
+2000-02-22,166,70.4,Roma
+1997-08-13,169,68.3,Milano
+</code></pre></div>
+</div>
+<p>Per impostare il filtro tramite espressione regolare si usa l'opzione <code>-r</code>. Ad esempio estrarre soltanto i campi che iniziano per <code>a</code> e che terminano per <code>o</code>:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv cut -r -f "^a","o$" base_category.csv</p>
+<div class="highlight"><pre><span></span><code>altezza,peso
+176,86.5
+162,58.3
+196,90.4
+166,70.4
+169,68.3
+</code></pre></div>
+</div>
+<h3 id="decimate">decimate<a class="headerlink" href="#decimate" title="Permanent link">&para;</a></h3>
+<p>Estrae un record ogni <code>n</code>, opzionalmente per categoria.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr decimate --help</p>
+<div class="highlight"><pre><span></span><code>Passes through one of every n records, optionally by category.
+Options:
+ -b Decimate by printing first of every n.
+ -e Decimate by printing last of every n (default).
+ -g {a,b,c} Optional group-by-field names for decimate counts, e.g. a,b,c.
+ -n {n} Decimation factor (default 10).
+</code></pre></div>
+</div>
+<h3 id="fill-down">fill-down<a class="headerlink" href="#fill-down" title="Permanent link">&para;</a></h3>
+<p>Se un dato record ha un valore mancante per un dato campo, verrà riempito dal valore corrispondente del record precedente, se presente.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr fill-down --help</p>
+<div class="highlight"><pre><span></span><code>If a given record has a missing value for a given field, fill that from
+the corresponding value from a previous record, if any.
+By default, a &#39;missing&#39; field either is absent, or has the empty-string value.
+With -a, a field is &#39;missing&#39; only if it is absent.
+
+Options:
+ --all Operate on all fields in the input.
+ -a|--only-if-absent If a given record has a missing value for a given field,
+     fill that from the corresponding value from a previous record, if any.
+     By default, a &#39;missing&#39; field either is absent, or has the empty-string value.
+     With -a, a field is &#39;missing&#39; only if it is absent.
+ -f  Field names for fill-down.
+</code></pre></div>
+</div>
+<p>File di esempio:</p>
+<div class="highlight"><span class="filename">fill-down.csv</span><pre><span></span><code>a,b,c
+1,,3
+4,5,
+7,,9
+</code></pre></div>
+<p>Con l'opzione <code>-all</code> il verbo viene applicato per tutti i record:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv  fill-down --all  fill-down.csv</p>
+<div class="highlight"><pre><span></span><code>a,b,c
+1,,3
+4,5,3
+7,5,9
+</code></pre></div>
+</div>
+<p>Con <code>-f</code> è possibile scegliere di applicaro a 1 o più campi.</p>
+<h3 id="fill-empty">fill-empty<a class="headerlink" href="#fill-empty" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Il verbo <code>fill-empty</code> richiede Miller &gt;= 6.0</p>
+</div>
+<p>Riempe le celle vuote, con un valore specifico</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr fill-empty --help</p>
+<div class="highlight"><pre><span></span><code>Fills empty-string fields with specified fill-value.
+Options:
+-v {string} Fill-value: defaults to &quot;N/A&quot;
+-S          Don&#39;t infer type -- so &#39;-v 0&#39; would fill string 0 not int 0.
+</code></pre></div>
+</div>
+<p>File di esempio:</p>
+<div class="highlight"><span class="filename">fill-down.csv</span><pre><span></span><code>a,b,c
+1,,3
+4,5,
+7,,9
+</code></pre></div>
+<p>Come impopstazione predefinita, il valore assegnato sarà <code>N/A</code>, ma è possibile impostarlo con <code>-v</code>:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv  fill-empty fill-down.csv</p>
+<div class="highlight"><pre><span></span><code>a,b,c
+1,N/A,3
+4,5,N/A
+7,N/A,9
+</code></pre></div>
+</div>
+<h3 id="filter">filter<a class="headerlink" href="#filter" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr filter --help</p>
+<div class="highlight"><pre><span></span><code>Options:
+-f {file name} File containing a DSL expression (see examples below). If the filename
+   is a directory, all *.mlr files in that directory are loaded.
+
+-e {expression} You can use this after -f to add an expression. Example use
+   case: define functions/subroutines in a file you specify with -f, then call
+   them with an expression you specify with -e.
+
+(If you mix -e and -f then the expressions are evaluated in the order encountered.
+Since the expression pieces are simply concatenated, please be sure to use intervening
+semicolons to separate expressions.)
+
+-s name=value: Predefines out-of-stream variable @name to have
+    Thus mlr put -s foo=97 &#39;$column += @foo&#39; is like
+    mlr put &#39;begin {@foo = 97} $column += @foo&#39;.
+    The value part is subject to type-inferencing.
+    May be specified more than once, e.g. -s name1=value1 -s name2=value2.
+    Note: the value may be an environment variable, e.g. -s sequence=$SEQUENCE
+
+-x (default false) Prints records for which {expression} evaluates to false, not true,
+   i.e. invert the sense of the filter expression.
+
+-q Does not include the modified record in the output stream.
+   Useful for when all desired output is in begin and/or end blocks.
+
+-S and -F: There are no-ops in Miller 6 and above, since now type-inferencing is done
+   by the record-readers before filter/put is executed. Supported as no-op pass-through
+   flags for backward compatibility.
+
+
+Parser-info options:
+
+-w Print warnings about things like uninitialized variables.
+
+-W Same as -w, but exit the process if there are any warnings.
+
+-p Prints the expressions&#39;s AST (abstract syntax tree), which gives full
+  transparency on the precedence and associativity rules of Miller&#39;s grammar,
+  to stdout.
+
+-d Like -p but uses a parenthesized-expression format for the AST.
+
+-D Like -d but with output all on one line.
+
+-E Echo DSL expression before printing parse-tree
+
+-v Same as -E -p.
+
+-X Exit after parsing but before stream-processing. Useful with -v/-d/-D, if you
+   only want to look at parser information.
+
+Records will pass the filter depending on the last bare-boolean statement in
+the DSL expression. That can be the result of &lt;, ==, &gt;, etc., the return value of a function call
+which returns boolean, etc.
+
+Examples:
+  mlr --csv --from example.csv filter &#39;$color == &quot;red&quot;&#39;
+  mlr --csv --from example.csv filter &#39;$color == &quot;red&quot; &amp;&amp; flag == true&#39;
+More example filter expressions:
+  First record in each file:
+    &#39;FNR == 1&#39;
+  Subsampling:
+    &#39;urand() &lt; 0.001&#39;
+  Compound booleans:
+    &#39;$color != &quot;blue&quot; &amp;&amp; $value &gt; 4.2&#39;
+    &#39;($x &lt; 0.5 &amp;&amp; $y &lt; 0.5) || ($x &gt; 0.5 &amp;&amp; $y &gt; 0.5)&#39;
+  Regexes with case-insensitive flag
+    &#39;($name =~ &quot;^sys.*east$&quot;) || ($name =~ &quot;^dev.[0-9]+&quot;i)&#39;
+  Assignments, then bare-boolean filter statement:
+    &#39;$ab = $a+$b; $cd = $c+$d; $ab != $cd&#39;
+  Bare-boolean filter statement within a conditional:
+    &#39;if (NR &lt; 100) {
+      $x &gt; 0.3;
+    } else {
+      $x &gt; 0.002;
+    }
+    &#39;
+  Using &#39;any&#39; higher-order function to see if $index is 10, 20, or 30:
+    &#39;any([10,20,30], func(e) {return $index == e})&#39;
+
+See also https://miller.readthedocs.io/reference-dsl for more context.
+</code></pre></div>
+</div>
+<h3 id="flatten">flatten<a class="headerlink" href="#flatten" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr flatten --help</p>
+<div class="highlight"><pre><span></span><code>Flattens multi-level maps to single-level ones. Example: field with name &#39;a&#39;
+and value &#39;{&quot;b&quot;: { &quot;c&quot;: 4 }}&#39; becomes name &#39;a.b.c&#39; and value 4.
+Options:
+-f Comma-separated list of field names to flatten (default all).
+-s Separator, defaulting to mlr --flatsep value.
+</code></pre></div>
+</div>
+<h3 id="format-values">format-values<a class="headerlink" href="#format-values" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr format-values --help</p>
+<div class="highlight"><pre><span></span><code>Applies format strings to all field values, depending on autodetected type.
+* If a field value is detected to be integer, applies integer format.
+* Else, if a field value is detected to be float, applies float format.
+* Else, applies string format.
+
+Note: this is a low-keystroke way to apply formatting to many fields. To get
+finer control, please see the fmtnum function within the mlr put DSL.
+
+Note: this verb lets you apply arbitrary format strings, which can produce
+undefined behavior and/or program crashes.  See your system&#39;s &quot;man printf&quot;.
+
+Options:
+-i {integer format} Defaults to &quot;%d&quot;.
+                    Examples: &quot;%06lld&quot;, &quot;%08llx&quot;.
+                    Note that Miller integers are long long so you must use
+                    formats which apply to long long, e.g. with ll in them.
+                    Undefined behavior results otherwise.
+-f {float format}   Defaults to &quot;%f&quot;.
+                    Examples: &quot;%8.3lf&quot;, &quot;%.6le&quot;.
+                    Note that Miller floats are double-precision so you must
+                    use formats which apply to double, e.g. with l[efg] in them.
+                    Undefined behavior results otherwise.
+-s {string format}  Defaults to &quot;%s&quot;.
+                    Examples: &quot;_%s&quot;, &quot;%08s&quot;.
+                    Note that you must use formats which apply to string, e.g.
+                    with s in them. Undefined behavior results otherwise.
+-n                  Coerce field values autodetected as int to float, and then
+                    apply the float format.
+</code></pre></div>
+</div>
+<h3 id="fraction">fraction<a class="headerlink" href="#fraction" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr fraction --help</p>
+<div class="highlight"><pre><span></span><code>For each record&#39;s value in specified fields, computes the ratio of that
+value to the sum of values in that field over all input records.
+E.g. with input records  x=1  x=2  x=3  and  x=4, emits output records
+x=1,x_fraction=0.1  x=2,x_fraction=0.2  x=3,x_fraction=0.3  and  x=4,x_fraction=0.4
+
+Note: this is internally a two-pass algorithm: on the first pass it retains
+input records and accumulates sums; on the second pass it computes quotients
+and emits output records. This means it produces no output until all input is read.
+
+Options:
+-f {a,b,c}    Field name(s) for fraction calculation
+-g {d,e,f}    Optional group-by-field name(s) for fraction counts
+-p            Produce percents [0..100], not fractions [0..1]. Output field names
+              end with &quot;_percent&quot; rather than &quot;_fraction&quot;
+-c            Produce cumulative distributions, i.e. running sums: each output
+              value folds in the sum of the previous for the specified group
+              E.g. with input records  x=1  x=2  x=3  and  x=4, emits output records
+              x=1,x_cumulative_fraction=0.1  x=2,x_cumulative_fraction=0.3
+              x=3,x_cumulative_fraction=0.6  and  x=4,x_cumulative_fraction=1.0
+</code></pre></div>
+</div>
+<h3 id="gap">gap<a class="headerlink" href="#gap" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr gap --help</p>
+<div class="highlight"><pre><span></span><code>Emits an empty record every n records, or when certain values change.
+Options:
+Emits an empty record every n records, or when certain values change.
+-g {a,b,c} Print a gap whenever values of these fields (e.g. a,b,c) changes.
+-n {n} Print a gap every n records.
+One of -f or -g is required.
+-n is ignored if -g is present.
+</code></pre></div>
+</div>
+<h3 id="grep">grep<a class="headerlink" href="#grep" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr grep --help</p>
+<div class="highlight"><pre><span></span><code>Passes through records which match the regular expression.
+Options:
+-i  Use case-insensitive search.
+-v  Invert: pass through records which do not match the regex.
+Note that &quot;mlr filter&quot; is more powerful, but requires you to know field names.
+By contrast, &quot;mlr grep&quot; allows you to regex-match the entire record. It does
+this by formatting each record in memory as DKVP, using command-line-specified
+ORS/OFS/OPS, and matching the resulting line against the regex specified
+here. In particular, the regex is not applied to the input stream: if you
+have CSV with header line &quot;x,y,z&quot; and data line &quot;1,2,3&quot; then the regex will
+be matched, not against either of these lines, but against the DKVP line
+&quot;x=1,y=2,z=3&quot;.  Furthermore, not all the options to system grep are supported,
+and this command is intended to be merely a keystroke-saver. To get all the
+features of system grep, you can do
+  &quot;mlr --odkvp ... | grep ... | mlr --idkvp ...&quot;
+</code></pre></div>
+</div>
+<h3 id="group-by">group-by<a class="headerlink" href="#group-by" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr group-by --help</p>
+<div class="highlight"><pre><span></span><code>Outputs records in batches having identical values at specified field names.Options:
+</code></pre></div>
+</div>
+<h3 id="group-like">group-like<a class="headerlink" href="#group-like" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr group-like --help</p>
+<div class="highlight"><pre><span></span><code>Outputs records in batches having identical field names.
+Options:
+</code></pre></div>
+</div>
+<h3 id="having-fields">having-fields<a class="headerlink" href="#having-fields" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr having-fields --help</p>
+<div class="highlight"><pre><span></span><code>Conditionally passes through records depending on each record&#39;s field names.
+Options:
+  --at-least      {comma-separated names}
+  --which-are     {comma-separated names}
+  --at-most       {comma-separated names}
+  --all-matching  {regular expression}
+  --any-matching  {regular expression}
+  --none-matching {regular expression}
+Examples:
+  mlr having-fields --which-are amount,status,owner
+  mlr having-fields --any-matching &#39;sda[0-9]&#39;
+  mlr having-fields --any-matching &#39;&quot;sda[0-9]&quot;&#39;
+  mlr having-fields --any-matching &#39;&quot;sda[0-9]&quot;i&#39; (this is case-insensitive)
+</code></pre></div>
+</div>
+<h3 id="head">head<a class="headerlink" href="#head" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr head --help</p>
+<div class="highlight"><pre><span></span><code>Passes through the first n records, optionally by category.
+Without -g, ceases consuming more input (i.e. is fast) when n records have been read.
+Options:
+-g {a,b,c} Optional group-by-field names for head counts, e.g. a,b,c.
+-n {n} Head-count to print. Default 10.
+</code></pre></div>
+</div>
+<h3 id="histogram">histogram<a class="headerlink" href="#histogram" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr histogram --help</p>
+<div class="highlight"><pre><span></span><code>Just a histogram. Input values &lt; lo or &gt; hi are not counted.
+-f {a,b,c}    Value-field names for histogram counts
+--lo {lo}     Histogram low value
+--hi {hi}     Histogram high value
+--nbins {n}   Number of histogram bins. Defaults to 20.
+--auto        Automatically computes limits, ignoring --lo and --hi.
+              Holds all values in memory before producing any output.
+-o {prefix}   Prefix for output field name. Default: no prefix.
+</code></pre></div>
+</div>
+<h3 id="json-parse">json-parse<a class="headerlink" href="#json-parse" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr json-parse --help</p>
+<div class="highlight"><pre><span></span><code>Tries to convert string field values to parsed JSON, e.g. &quot;[1,2,3]&quot; -&gt; [1,2,3].
+Options:
+-f {...} Comma-separated list of field names to json-parse (default all).
+</code></pre></div>
+</div>
+<h3 id="json-stringify">json-stringify<a class="headerlink" href="#json-stringify" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr json-stringify --help</p>
+<div class="highlight"><pre><span></span><code>Produces string field values from field-value data, e.g. [1,2,3] -&gt; &quot;[1,2,3]&quot;.
+Options:
+-f {...} Comma-separated list of field names to json-parse (default all).
+--jvstack Produce multi-line JSON output.
+--no-jvstack Produce single-line JSON output per record (default).
+</code></pre></div>
+</div>
+<h3 id="join">join<a class="headerlink" href="#join" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr join --help</p>
+<div class="highlight"><pre><span></span><code>Joins records from specified left file name with records from all file names
+at the end of the Miller argument list.
+Functionality is essentially the same as the system &quot;join&quot; command, but for
+record streams.
+Options:
+  -f {left file name}
+  -j {a,b,c}   Comma-separated join-field names for output
+  -l {a,b,c}   Comma-separated join-field names for left input file;
+               defaults to -j values if omitted.
+  -r {a,b,c}   Comma-separated join-field names for right input file(s);
+               defaults to -j values if omitted.
+  --lp {text}  Additional prefix for non-join output field names from
+               the left file
+  --rp {text}  Additional prefix for non-join output field names from
+               the right file(s)
+  --np         Do not emit paired records
+  --ul         Emit unpaired records from the left file
+  --ur         Emit unpaired records from the right file(s)
+  -s|--sorted-input  Require sorted input: records must be sorted
+               lexically by their join-field names, else not all records will
+               be paired. The only likely use case for this is with a left
+               file which is too big to fit into system memory otherwise.
+  -u           Enable unsorted input. (This is the default even without -u.)
+               In this case, the entire left file will be loaded into memory.
+               If you wish to use a prepipe command for the main input as well
+               as here, it must be specified there as well as here.
+  --prepipex {command} Likewise.
+File-format options default to those for the right file names on the Miller
+argument list, but may be overridden for the left file as follows. Please see
+  -i {one of csv,dkvp,nidx,pprint,xtab}
+  --irs {record-separator character}
+  --ifs {field-separator character}
+  --ips {pair-separator character}
+  --repifs
+  --implicit-csv-header
+  --no-implicit-csv-header
+For example, if you have &#39;mlr --csv ... join -l foo ... &#39; then the left-file format will
+be specified CSV as well unless you override with &#39;mlr --csv ... join --ijson -l foo&#39; etc.
+Likewise, if you have &#39;mlr --csv --implicit-csv-header ...&#39; then the join-in file will be
+expected to be headerless as well unless you put &#39;--no-implicit-csv-header&#39; after &#39;join&#39;.
+Please use &quot;mlr --usage-separator-options&quot; for information on specifying separators.
+Please see https://miller.readthedocs.io/en/latest/reference-verbs.html#join for more information
+including examples.
+</code></pre></div>
+</div>
+<h3 id="label">label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr label --help</p>
+<div class="highlight"><pre><span></span><code>Given n comma-separated names, renames the first n fields of each record to
+have the respective name. (Fields past the nth are left with their original
+names.) Particularly useful with --inidx or --implicit-csv-header, to give
+useful names to otherwise integer-indexed fields.
+
+Options:
+</code></pre></div>
+</div>
+<h3 id="least-frequent">least-frequent<a class="headerlink" href="#least-frequent" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr least-frequent --help</p>
+<div class="highlight"><pre><span></span><code>Shows the least frequently occurring distinct values for specified field names.
+The first entry is the statistical anti-mode; the remaining are runners-up.
+Options:
+-f {one or more comma-separated field names}. Required flag.
+-n {count}. Optional flag defaulting to 10.
+-b          Suppress counts; show only field values.
+-o {name}   Field name for output count. Default &quot;count&quot;.
+See also &quot;mlr most-frequent&quot;.
+</code></pre></div>
+</div>
+<h3 id="merge-fields">merge-fields<a class="headerlink" href="#merge-fields" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr merge-fields --help</p>
+<div class="highlight"><pre><span></span><code>Computes univariate statistics for each input record, accumulated across
+specified fields.
+Options:
+-a {sum,count,...}  Names of accumulators. One or more of:
+  count    Count instances of fields
+  mode     Find most-frequently-occurring values for fields; first-found wins tie
+  antimode Find least-frequently-occurring values for fields; first-found wins tie
+  sum      Compute sums of specified fields
+  mean     Compute averages (sample means) of specified fields
+  var      Compute sample variance of specified fields
+  stddev   Compute sample standard deviation of specified fields
+  meaneb   Estimate error bars for averages (assuming no sample autocorrelation)
+  skewness Compute sample skewness of specified fields
+  kurtosis Compute sample kurtosis of specified fields
+  min      Compute minimum values of specified fields
+  max      Compute maximum values of specified fields
+-f {a,b,c}  Value-field names on which to compute statistics. Requires -o.
+-r {a,b,c}  Regular expressions for value-field names on which to compute
+            statistics. Requires -o.
+-c {a,b,c}  Substrings for collapse mode. All fields which have the same names
+            after removing substrings will be accumulated together. Please see
+            examples below.
+-i          Use interpolated percentiles, like R&#39;s type=7; default like type=1.
+            Not sensical for string-valued fields.
+-o {name}   Output field basename for -f/-r.
+-k          Keep the input fields which contributed to the output statistics;
+            the default is to omit them.
+
+String-valued data make sense unless arithmetic on them is required,
+e.g. for sum, mean, interpolated percentiles, etc. In case of mixed data,
+numbers are less than strings.
+
+Example input data: &quot;a_in_x=1,a_out_x=2,b_in_y=4,b_out_x=8&quot;.
+Example: mlr merge-fields -a sum,count -f a_in_x,a_out_x -o foo
+  produces &quot;b_in_y=4,b_out_x=8,foo_sum=3,foo_count=2&quot; since &quot;a_in_x,a_out_x&quot; are
+  summed over.
+Example: mlr merge-fields -a sum,count -r in_,out_ -o bar
+  produces &quot;bar_sum=15,bar_count=4&quot; since all four fields are summed over.
+Example: mlr merge-fields -a sum,count -c in_,out_
+  produces &quot;a_x_sum=3,a_x_count=2,b_y_sum=4,b_y_count=1,b_x_sum=8,b_x_count=1&quot;
+  since &quot;a_in_x&quot; and &quot;a_out_x&quot; both collapse to &quot;a_x&quot;, &quot;b_in_y&quot; collapses to
+  &quot;b_y&quot;, and &quot;b_out_x&quot; collapses to &quot;b_x&quot;.
+</code></pre></div>
+</div>
+<h3 id="most-frequent">most-frequent<a class="headerlink" href="#most-frequent" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr most-frequent --help</p>
+<div class="highlight"><pre><span></span><code>Shows the most frequently occurring distinct values for specified field names.
+The first entry is the statistical mode; the remaining are runners-up.
+Options:
+-f {one or more comma-separated field names}. Required flag.
+-n {count}. Optional flag defaulting to 10.
+-b          Suppress counts; show only field values.
+-o {name}   Field name for output count. Default &quot;count&quot;.
+See also &quot;mlr least-frequent&quot;.
+</code></pre></div>
+</div>
+<h3 id="nest">nest<a class="headerlink" href="#nest" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr nest --help</p>
+<div class="highlight"><pre><span></span><code>Explodes specified field values into separate fields/records, or reverses this.
+Options:
+  --explode,--implode   One is required.
+  --values,--pairs      One is required.
+  --across-records,--across-fields One is required.
+  -f {field name}       Required.
+  --nested-fs {string}  Defaults to &quot;;&quot;. Field separator for nested values.
+  --nested-ps {string}  Defaults to &quot;:&quot;. Pair separator for nested key-value pairs.
+  --evar {string}       Shorthand for --explode --values ---across-records --nested-fs {string}
+  --ivar {string}       Shorthand for --implode --values ---across-records --nested-fs {string}
+Please use &quot;mlr --usage-separator-options&quot; for information on specifying separators.
+
+Examples:
+
+  mlr nest --explode --values --across-records -f x
+  with input record &quot;x=a;b;c,y=d&quot; produces output records
+    &quot;x=a,y=d&quot;
+    &quot;x=b,y=d&quot;
+    &quot;x=c,y=d&quot;
+  Use --implode to do the reverse.
+
+  mlr nest --explode --values --across-fields -f x
+  with input record &quot;x=a;b;c,y=d&quot; produces output records
+    &quot;x_1=a,x_2=b,x_3=c,y=d&quot;
+  Use --implode to do the reverse.
+
+  mlr nest --explode --pairs --across-records -f x
+  with input record &quot;x=a:1;b:2;c:3,y=d&quot; produces output records
+    &quot;a=1,y=d&quot;
+    &quot;b=2,y=d&quot;
+    &quot;c=3,y=d&quot;
+
+  mlr nest --explode --pairs --across-fields -f x
+  with input record &quot;x=a:1;b:2;c:3,y=d&quot; produces output records
+    &quot;a=1,b=2,c=3,y=d&quot;
+
+Notes:
+* With --pairs, --implode doesn&#39;t make sense since the original field name has
+  been lost.
+* The combination &quot;--implode --values --across-records&quot; is non-streaming:
+  no output records are produced until all input records have been read. In
+  particular, this means it won&#39;t work in tail -f contexts. But all other flag
+  combinations result in streaming (tail -f friendly) data processing.
+* It&#39;s up to you to ensure that the nested-fs is distinct from your data&#39;s IFS:
+  e.g. by default the former is semicolon and the latter is comma.
+See also mlr reshape.
+</code></pre></div>
+</div>
+<h3 id="nothing">nothing<a class="headerlink" href="#nothing" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr nothing --help</p>
+<div class="highlight"><pre><span></span><code>Drops all input records. Useful for testing, or after tee/print/etc. have
+produced other output.
+Options:
+</code></pre></div>
+</div>
+<h3 id="put">put<a class="headerlink" href="#put" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr put --help</p>
+<div class="highlight"><pre><span></span><code>Options:
+-f {file name} File containing a DSL expression (see examples below). If the filename
+   is a directory, all *.mlr files in that directory are loaded.
+
+-e {expression} You can use this after -f to add an expression. Example use
+   case: define functions/subroutines in a file you specify with -f, then call
+   them with an expression you specify with -e.
+
+(If you mix -e and -f then the expressions are evaluated in the order encountered.
+Since the expression pieces are simply concatenated, please be sure to use intervening
+semicolons to separate expressions.)
+
+-s name=value: Predefines out-of-stream variable @name to have
+    Thus mlr put -s foo=97 &#39;$column += @foo&#39; is like
+    mlr put &#39;begin {@foo = 97} $column += @foo&#39;.
+    The value part is subject to type-inferencing.
+    May be specified more than once, e.g. -s name1=value1 -s name2=value2.
+    Note: the value may be an environment variable, e.g. -s sequence=$SEQUENCE
+
+-x (default false) Prints records for which {expression} evaluates to false, not true,
+   i.e. invert the sense of the filter expression.
+
+-q Does not include the modified record in the output stream.
+   Useful for when all desired output is in begin and/or end blocks.
+
+-S and -F: There are no-ops in Miller 6 and above, since now type-inferencing is done
+   by the record-readers before filter/put is executed. Supported as no-op pass-through
+   flags for backward compatibility.
+
+
+Parser-info options:
+
+-w Print warnings about things like uninitialized variables.
+
+-W Same as -w, but exit the process if there are any warnings.
+
+-p Prints the expressions&#39;s AST (abstract syntax tree), which gives full
+  transparency on the precedence and associativity rules of Miller&#39;s grammar,
+  to stdout.
+
+-d Like -p but uses a parenthesized-expression format for the AST.
+
+-D Like -d but with output all on one line.
+
+-E Echo DSL expression before printing parse-tree
+
+-v Same as -E -p.
+
+-X Exit after parsing but before stream-processing. Useful with -v/-d/-D, if you
+   only want to look at parser information.
+
+Examples:
+  mlr --from example.csv put &#39;$qr = $quantity * $rate&#39;
+More example put expressions:
+  If-statements:
+    &#39;if ($flag == true) { $quantity *= 10}&#39;
+    &#39;if ($x &gt; 0.0 { $y=log10($x); $z=sqrt($y) } else {$y = 0.0; $z = 0.0}&#39;
+  Newly created fields can be read after being written:
+    &#39;$new_field = $index**2; $qn = $quantity * $new_field&#39;
+  Regex-replacement:
+    &#39;$name = sub($name, &quot;http.*com&quot;i, &quot;&quot;)&#39;
+  Regex-capture:
+    &#39;if ($a =~ &quot;([a-z]+)_([0-9]+)) { $b = &quot;left_\1&quot;; $c = &quot;right_\2&quot; }&#39;
+  Built-in variables:
+    &#39;$filename = FILENAME&#39;
+  Aggregations (use mlr put -q):
+    &#39;@sum += $x; end {emit @sum}&#39;
+    &#39;@sum[$shape] += $quantity; end {emit @sum, &quot;shape&quot;}&#39;
+    &#39;@sum[$shape][$color] += $x; end {emit @sum, &quot;shape&quot;, &quot;color&quot;}&#39;
+    &#39;
+      @min = min(@min,$x);
+      @max=max(@max,$x);
+      end{emitf @min, @max}
+    &#39;
+
+See also https://miller.readthedocs.io/reference-dsl for more context.
+</code></pre></div>
+</div>
+<h3 id="regularize">regularize<a class="headerlink" href="#regularize" title="Permanent link">&para;</a></h3>
+<p>Il verbo <code>regularize</code> riordina le righe nello stesso ordine della prima (qualunque sia l'ordine).</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr regularize --help</p>
+<div class="highlight"><pre><span></span><code>Outputs records sorted lexically ascending by keys.
+Options:
+</code></pre></div>
+</div>
+<h3 id="remove-empty-columns">remove-empty-columns<a class="headerlink" href="#remove-empty-columns" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr remove-empty-columns --help</p>
+<div class="highlight"><pre><span></span><code>Omits fields which are empty on every input row. Non-streaming.
+Options:
+</code></pre></div>
+</div>
+<h3 id="rename">rename<a class="headerlink" href="#rename" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr rename --help</p>
+<div class="highlight"><pre><span></span><code>Renames specified fields.
+Options:
+-r         Treat old field  names as regular expressions. &quot;ab&quot;, &quot;a.*b&quot;
+           will match any field name containing the substring &quot;ab&quot; or
+           matching &quot;a.*b&quot;, respectively; anchors of the form &quot;^ab$&quot;,
+           &quot;^a.*b$&quot; may be used. New field names may be plain strings,
+           or may contain capture groups of the form &quot;\1&quot; through
+           &quot;\9&quot;. Wrapping the regex in double quotes is optional, but
+           is required if you wish to follow it with &#39;i&#39; to indicate
+           case-insensitivity.
+-g         Do global replacement within each field name rather than
+           first-match replacement.
+Examples:
+mlr rename old_name,new_name&#39;
+mlr rename old_name_1,new_name_1,old_name_2,new_name_2&#39;
+mlr rename -r &#39;Date_[0-9]+,Date,&#39;  Rename all such fields to be &quot;Date&quot;
+mlr rename -r &#39;&quot;Date_[0-9]+&quot;,Date&#39; Same
+mlr rename -r &#39;Date_([0-9]+).*,\1&#39; Rename all such fields to be of the form 20151015
+mlr rename -r &#39;&quot;name&quot;i,Name&#39;       Rename &quot;name&quot;, &quot;Name&quot;, &quot;NAME&quot;, etc. to &quot;Name&quot;
+</code></pre></div>
+</div>
+<h3 id="reorder">reorder<a class="headerlink" href="#reorder" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr reorder --help</p>
+<div class="highlight"><pre><span></span><code>Moves specified names to start of record, or end of record.
+Options:
+-e Put specified field names at record end: default is to put them at record start.
+-f {a,b,c} Field names to reorder.
+-b {x}     Put field names specified with -f before field name specified by {x},
+           if any. If {x} isn&#39;t present in a given record, the specified fields
+           will not be moved.
+-a {x}     Put field names specified with -f after field name specified by {x},
+           if any. If {x} isn&#39;t present in a given record, the specified fields
+           will not be moved.
+
+Examples:
+mlr reorder    -f a,b sends input record &quot;d=4,b=2,a=1,c=3&quot; to &quot;a=1,b=2,d=4,c=3&quot;.
+mlr reorder -e -f a,b sends input record &quot;d=4,b=2,a=1,c=3&quot; to &quot;d=4,c=3,a=1,b=2&quot;.
+</code></pre></div>
+</div>
+<h3 id="repeat">repeat<a class="headerlink" href="#repeat" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr repeat --help</p>
+<div class="highlight"><pre><span></span><code>Copies input records to output records multiple times.
+Options must be exactly one of the following:
+-n {repeat count}  Repeat each input record this many times.
+-f {field name}    Same, but take the repeat count from the specified
+                   field name of each input record.
+Example:
+  echo x=0 | mlr repeat -n 4 then put &#39;$x=urand()&#39;
+produces:
+ x=0.488189
+ x=0.484973
+ x=0.704983
+ x=0.147311
+Example:
+  echo a=1,b=2,c=3 | mlr repeat -f b
+produces:
+  a=1,b=2,c=3
+  a=1,b=2,c=3
+Example:
+  echo a=1,b=2,c=3 | mlr repeat -f c
+produces:
+  a=1,b=2,c=3
+  a=1,b=2,c=3
+  a=1,b=2,c=3
+</code></pre></div>
+</div>
+<h3 id="reshape">reshape<a class="headerlink" href="#reshape" title="Permanent link">&para;</a></h3>
+<p>Trasforma lo schema da <code>wide</code> a <code>long</code> e viceversa. Vedi <a href="../../dati/trasforma/">approfondimento</a>.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr reshape --help</p>
+<div class="highlight"><pre><span></span><code>Wide-to-long options:
+-i {input field names}   -o {key-field name,value-field name}
+-r {input field regexes} -o {key-field name,value-field name}
+These pivot/reshape the input data such that the input fields are removed
+and separate records are emitted for each key/value pair.
+Note: this works with tail -f and produces output records for each input
+record seen.
+Long-to-wide options:
+-s {key-field name,value-field name}
+These pivot/reshape the input data to undo the wide-to-long operation.
+Note: this does not work with tail -f; it produces output records only after
+all input records have been read.
+</code></pre></div>
+</div>
+<p>Ad esempio da <code>wide</code></p>
+<table>
+<thead>
+<tr>
+<th>Studente</th>
+<th>Scuola</th>
+<th>Matematica</th>
+<th>Italiano</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andy</td>
+<td>Liceo Cannizzaro</td>
+<td>7</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Lisa</td>
+<td>Liceo Garibaldi</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Giovanna</td>
+<td>Liceo Garibaldi</td>
+<td>7</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>a <code>long</code></p>
+<table>
+<thead>
+<tr>
+<th>Studente</th>
+<th>Scuola</th>
+<th>materia</th>
+<th>voto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andy</td>
+<td>Liceo Cannizzaro</td>
+<td>Matematica</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Andy</td>
+<td>Liceo Cannizzaro</td>
+<td>Italiano</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Lisa</td>
+<td>Liceo Garibaldi</td>
+<td>Matematica</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Lisa</td>
+<td>Liceo Garibaldi</td>
+<td>Italiano</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Giovanna</td>
+<td>Liceo Garibaldi</td>
+<td>Matematica</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Giovanna</td>
+<td>Liceo Garibaldi</td>
+<td>Italiano</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sample">sample<a class="headerlink" href="#sample" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr sample --help</p>
+<div class="highlight"><pre><span></span><code>Reservoir sampling (subsampling without replacement), optionally by category.
+See also mlr bootstrap and mlr shuffle.
+Options:
+-g {a,b,c} Optional: group-by-field names for samples, e.g. a,b,c.
+-k {k} Required: number of records to output in total, or by group if using -g.
+</code></pre></div>
+</div>
+<h3 id="sec2gmtdate">sec2gmtdate<a class="headerlink" href="#sec2gmtdate" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr sec2gmtdate --help</p>
+<div class="highlight"><pre><span></span><code>Replaces a numeric field representing seconds since the epoch with the
+corresponding GMT year-month-day timestamp; leaves non-numbers as-is.
+This is nothing more than a keystroke-saver for the sec2gmtdate function:
+  ../c/mlr sec2gmtdate time1,time2
+is the same as
+  ../c/mlr put &#39;$time1=sec2gmtdate($time1);$time2=sec2gmtdate($time2)&#39;
+</code></pre></div>
+</div>
+<h3 id="sec2gmt">sec2gmt<a class="headerlink" href="#sec2gmt" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr sec2gmt --help</p>
+<div class="highlight"><pre><span></span><code>Replaces a numeric field representing seconds since the epoch with the
+corresponding GMT timestamp; leaves non-numbers as-is. This is nothing
+more than a keystroke-saver for the sec2gmt function:
+  mlr sec2gmt time1,time2
+is the same as
+  mlr put &#39;$time1 = sec2gmt($time1); $time2 = sec2gmt($time2)&#39;
+Options:
+-1 through -9: format the seconds using 1..9 decimal places, respectively.
+--millis Input numbers are treated as milliseconds since the epoch.
+--micros Input numbers are treated as microseconds since the epoch.
+--nanos  Input numbers are treated as nanoseconds since the epoch.
+</code></pre></div>
+</div>
+<h3 id="seqgen">seqgen<a class="headerlink" href="#seqgen" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr seqgen --help</p>
+<div class="highlight"><pre><span></span><code>Passes input records directly to output. Most useful for format conversion.
+Produces a sequence of counters.  Discards the input record stream. Produces
+output as specified by the options
+
+Options:
+-f {name} (default &quot;i&quot;) Field name for counters.
+--start {value} (default 1) Inclusive start value.
+--step {value} (default 1) Step value.
+--stop {value} (default 100) Inclusive stop value.
+Start, stop, and/or step may be floating-point. Output is integer if start,
+stop, and step are all integers. Step may be negative. It may not be zero
+unless start == stop.
+</code></pre></div>
+</div>
+<h3 id="shuffle">shuffle<a class="headerlink" href="#shuffle" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr shuffle --help</p>
+<div class="highlight"><pre><span></span><code>Outputs records randomly permuted. No output records are produced until
+all input records are read. See also mlr bootstrap and mlr sample.
+Options:
+</code></pre></div>
+</div>
+<h3 id="skip-trivial-records">skip-trivial-records<a class="headerlink" href="#skip-trivial-records" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr skip-trivial-records --help</p>
+<div class="highlight"><pre><span></span><code>Passes through all records except those with zero fields,
+or those for which all fields have empty value.
+Options:
+</code></pre></div>
+</div>
+<h3 id="sort">sort<a class="headerlink" href="#sort" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr sort --help</p>
+<div class="highlight"><pre><span></span><code>Sorts records primarily by the first specified field, secondarily by the second
+field, and so on.  (Any records not having all specified sort keys will appear
+at the end of the output, in the order they were encountered, regardless of the
+specified sort order.) The sort is stable: records that compare equal will sort
+in the order they were encountered in the input record stream.
+
+Options:
+-f  {comma-separated field names}  Lexical ascending
+-r  {comma-separated field names}  Lexical descending
+-c  {comma-separated field names}  Case-folded lexical ascending
+-cr {comma-separated field names}  Case-folded lexical descending
+-n  {comma-separated field names}  Numerical ascending; nulls sort last
+-nf {comma-separated field names}  Same as -n
+-nr {comma-separated field names}  Numerical descending; nulls sort first
+-t  {comma-separated field names}  Natural ascending
+-tr {comma-separated field names}  Natural descending
+-h|--help Show this message.
+
+Example:
+  mlr sort -f a,b -nr x,y,z
+which is the same as:
+  mlr sort -f a -f b -nr x -nr y -nr z
+</code></pre></div>
+</div>
+<h3 id="sort-within-records">sort-within-records<a class="headerlink" href="#sort-within-records" title="Permanent link">&para;</a></h3>
+<p>Riordina i campi in ordine lessicamente crescente per nome campo.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr sort-within-records --help</p>
+<div class="highlight"><pre><span></span><code>Outputs records sorted lexically ascending by keys.
+Options:
+-r        Recursively sort subobjects/submaps, e.g. for JSON input.
+</code></pre></div>
+</div>
+<p>Ad esempio a questo file, in cui i campi hanno ordine diverso</p>
+<div class="highlight"><span class="filename">eterogeneita_irregular.json</span><pre><span></span><code>{ &quot;a&quot;: 1, &quot;b&quot;: 2, &quot;c&quot;: 3 }
+{ &quot;c&quot;: 6, &quot;a&quot;: 4, &quot;b&quot;: 5 }
+{ &quot;b&quot;: 8, &quot;c&quot;: 9, &quot;a&quot;: 7 }
+</code></pre></div>
+<p>si potrà applicare questo comando per ordinare i campi secondo l'ordine alfabetico dei loro nomi</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --json sort-within-records ./eterogeneita_irregular.json</p>
+<div class="highlight"><pre><span></span><code>{ &quot;a&quot;: 1, &quot;b&quot;: 2, &quot;c&quot;: 3 }
+{ &quot;a&quot;: 4, &quot;b&quot;: 5, &quot;c&quot;: 6 }
+{ &quot;a&quot;: 7, &quot;b&quot;: 8, &quot;c&quot;: 9 }
+</code></pre></div>
+</div>
+<h3 id="stats1">stats1<a class="headerlink" href="#stats1" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr stats1 --help</p>
+<div class="highlight"><pre><span></span><code>Computes univariate statistics for one or more given fields, accumulated across
+the input record stream.
+Options:
+-a {sum,count,...} Names of accumulators: one or more of:
+  median   This is the same as p50
+  p10 p25.2 p50 p98 p100 etc.
+  count    Count instances of fields
+  mode     Find most-frequently-occurring values for fields; first-found wins tie
+  antimode Find least-frequently-occurring values for fields; first-found wins tie
+  sum      Compute sums of specified fields
+  mean     Compute averages (sample means) of specified fields
+  var      Compute sample variance of specified fields
+  stddev   Compute sample standard deviation of specified fields
+  meaneb   Estimate error bars for averages (assuming no sample autocorrelation)
+  skewness Compute sample skewness of specified fields
+  kurtosis Compute sample kurtosis of specified fields
+  min      Compute minimum values of specified fields
+  max      Compute maximum values of specified fields
+
+-f {a,b,c}     Value-field names on which to compute statistics
+--fr {regex}   Regex for value-field names on which to compute statistics
+               (compute statistics on values in all field names matching regex
+--fx {regex}   Inverted regex for value-field names on which to compute statistics
+               (compute statistics on values in all field names not matching regex)
+
+-g {d,e,f}     Optional group-by-field names
+--gr {regex}   Regex for optional group-by-field names
+               (group by values in field names matching regex)
+--gx {regex}   Inverted regex for optional group-by-field names
+               (group by values in field names not matching regex)
+
+--grfx {regex} Shorthand for --gr {regex} --fx {that same regex}
+
+-i             Use interpolated percentiles, like R&#39;s type=7; default like type=1.
+               Not sensical for string-valued fields.\n&quot;);
+-s             Print iterative stats. Useful in tail -f contexts (in which
+               case please avoid pprint-format output since end of input
+               stream will never be seen).
+Example: mlr stats1 -a min,p10,p50,p90,max -f value -g size,shape
+Example: mlr stats1 -a count,mode -f size
+Example: mlr stats1 -a count,mode -f size -g shape
+Example: mlr stats1 -a count,mode --fr &#39;^[a-h].*$&#39; -gr &#39;^k.*$&#39;
+        This computes count and mode statistics on all field names beginning
+         with a through h, grouped by all field names starting with k.
+
+Notes:
+* p50 and median are synonymous.
+* min and max output the same results as p0 and p100, respectively, but use
+  less memory.
+* String-valued data make sense unless arithmetic on them is required,
+  e.g. for sum, mean, interpolated percentiles, etc. In case of mixed data,
+  numbers are less than strings.
+* count and mode allow text input; the rest require numeric input.
+  In particular, 1 and 1.0 are distinct text for count and mode.
+* When there are mode ties, the first-encountered datum wins.
+</code></pre></div>
+</div>
+<h3 id="stats2">stats2<a class="headerlink" href="#stats2" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr stats2 --help</p>
+<div class="highlight"><pre><span></span><code>Computes bivariate statistics for one or more given field-name pairs,
+accumulated across the input record stream.
+-a {linreg-ols,corr,...}  Names of accumulators: one or more of:
+  linreg-ols Linear regression using ordinary least squares
+  linreg-pca Linear regression using principal component analysis
+  r2       Quality metric for linreg-ols (linreg-pca emits its own)
+  logireg  Logistic regression
+  corr     Sample correlation
+  cov      Sample covariance
+  covx     Sample-covariance matrix
+-f {a,b,c,d}   Value-field name-pairs on which to compute statistics.
+               There must be an even number of names.
+-g {e,f,g}     Optional group-by-field names.
+-v             Print additional output for linreg-pca.
+-s             Print iterative stats. Useful in tail -f contexts (in which
+               case please avoid pprint-format output since end of input
+               stream will never be seen).
+--fit          Rather than printing regression parameters, applies them to
+               the input data to compute new fit fields. All input records are
+               held in memory until end of input stream. Has effect only for
+               linreg-ols, linreg-pca, and logireg.
+Only one of -s or --fit may be used.
+Example: mlr stats2 -a linreg-pca -f x,y
+Example: mlr stats2 -a linreg-ols,r2 -f x,y -g size,shape
+Example: mlr stats2 -a corr -f x,y
+</code></pre></div>
+</div>
+<h3 id="step">step<a class="headerlink" href="#step" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr step --help</p>
+<div class="highlight"><pre><span></span><code>Computes values dependent on the previous record, optionally grouped by category.
+Options:
+-a {delta,rsum,...}   Names of steppers: comma-separated, one or more of:
+  delta    Compute differences in field(s) between successive records
+  shift    Include value(s) in field(s) from previous record, if any
+  from-first Compute differences in field(s) from first record
+  ratio    Compute ratios in field(s) between successive records
+  rsum     Compute running sums of field(s) between successive records
+  counter  Count instances of field(s) between successive records
+  ewma     Exponentially weighted moving average over successive records
+
+-f {a,b,c} Value-field names on which to compute statistics
+-g {d,e,f} Optional group-by-field names
+-F         Computes integerable things (e.g. counter) in floating point.
+           As of Miller 6 this happens automatically, but the flag is accepted
+           as a no-op for backward compatibility with Miller 5 and below.
+-d {x,y,z} Weights for ewma. 1 means current sample gets all weight (no
+           smoothing), near under under 1 is light smoothing, near over 0 is
+           heavy smoothing. Multiple weights may be specified, e.g.
+           &quot;mlr step -a ewma -f sys_load -d 0.01,0.1,0.9&quot;. Default if omitted
+           is &quot;-d 0.5&quot;.
+-o {a,b,c} Custom suffixes for EWMA output fields. If omitted, these default to
+           the -d values. If supplied, the number of -o values must be the same
+           as the number of -d values.
+
+Examples:
+  mlr step -a rsum -f request_size
+  mlr step -a delta -f request_size -g hostname
+  mlr step -a ewma -d 0.1,0.9 -f x,y
+  mlr step -a ewma -d 0.1,0.9 -o smooth,rough -f x,y
+  mlr step -a ewma -d 0.1,0.9 -o smooth,rough -f x,y -g group_name
+
+Please see https://miller.readthedocs.io/en/latest/reference-verbs.html#filter or
+https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average
+for more information on EWMA.
+</code></pre></div>
+</div>
+<h3 id="tac">tac<a class="headerlink" href="#tac" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr tac --help</p>
+<div class="highlight"><pre><span></span><code>Prints records in reverse order from the order in which they were encountered.
+Options:
+</code></pre></div>
+</div>
+<h3 id="tail">tail<a class="headerlink" href="#tail" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr tail --help</p>
+<div class="highlight"><pre><span></span><code>Passes through the last n records, optionally by category.
+Options:
+-g {a,b,c} Optional group-by-field names for head counts, e.g. a,b,c.
+-n {n} Head-count to print. Default 10.
+</code></pre></div>
+</div>
+<h3 id="tee">tee<a class="headerlink" href="#tee" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr tee --help</p>
+<div class="highlight"><pre><span></span><code>Options:
+-a    Append to existing file, if any, rather than overwriting.
+-p    Treat filename as a pipe-to command.
+Any of the output-format command-line flags (see mlr -h). Example: using
+  mlr --icsv --opprint put &#39;...&#39; then tee --ojson ./mytap.dat then stats1 ...
+the input is CSV, the output is pretty-print tabular, but the tee-file output
+is written in JSON format.
+</code></pre></div>
+</div>
+<h3 id="template">template<a class="headerlink" href="#template" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr template --help</p>
+<div class="highlight"><pre><span></span><code>Places input-record fields in the order specified by list of column names.
+If the input record is missing a specified field, it will be filled with the fill-with.
+If the input record possesses an unspecified field, it will be discarded.
+Options:
+ -f {a,b,c} Comma-separated field names for template, e.g. a,b,c.
+ -t {filename} CSV file whose header line will be used for template.
+--fill-with {filler string}  What to fill absent fields with. Defaults to the empty string.
+Example:
+* Specified fields are a,b,c.
+* Input record is c=3,a=1,f=6.
+* Output record is a=1,b=,c=3.
+</code></pre></div>
+</div>
+<h3 id="top">top<a class="headerlink" href="#top" title="Permanent link">&para;</a></h3>
+<p>Restituisce i record con i valori più grandi (o più piccoli), per uno o più campi, anche raggruppando per campi.</p>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr top --help</p>
+<div class="highlight"><pre><span></span><code>-f {a,b,c}    Value-field names for top counts.
+-g {d,e,f}    Optional group-by-field names for top counts.
+-n {count}    How many records to print per category; default 1.
+-a            Print all fields for top-value records; default is
+              to print only value and group-by fields. Requires a single
+              value-field name only.
+--min         Print top smallest values; default is top largest values.
+-F            Keep top values as floats even if they look like integers.
+-o {name}     Field name for output indices. Default &quot;top_idx&quot;.
+Prints the n records with smallest/largest values at specified fields,
+optionally by category.
+</code></pre></div>
+</div>
+<p>Qui un file (senza intestazione, nel comando di sotto si usa infatti il flag <a href="../flag/#csv"><code>-N</code></a>), in cui i primi 4 campi sono a volte duplicati in più record.</p>
+<div class="highlight"><span class="filename">input.csv</span><pre><span></span><code>1,861265,C,A,0.071
+1,861265,C,A,0.148
+1,861265,C,G,0.001
+1,861265,C,G,0.108
+1,861265,C,T,0
+1,861265,C,T,0.216
+2,193456,G,A,0.006
+2,193456,G,A,0.094
+2,193456,G,C,0.011
+2,193456,G,C,0.152
+2,193456,G,T,0.003
+2,193456,G,T,0.056
+</code></pre></div>
+<p>Se se si vogliono estrarre le righe con il valore massimo del campo <code>5</code>, a parità di valori dei campi <code>1</code>,<code>2</code>,<code>3</code>,<code>4</code>, il comando sarà:</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv -N top -f 5  -g 1,2,3,4 input.tsv</p>
+<div class="highlight"><pre><span></span><code>1,861265,C,A,1,0.148
+1,861265,C,G,1,0.108
+1,861265,C,T,1,0.216
+2,193456,G,A,1,0.094
+2,193456,G,C,1,0.152
+2,193456,G,T,1,0.056
+</code></pre></div>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">In output soltanto i campi definiti nel comando. Se si vogliono tutti, bisogna aggiungere <code>-a</code></p>
+</div>
+<h3 id="unflatten">unflatten<a class="headerlink" href="#unflatten" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr unflatten --help</p>
+<div class="highlight"><pre><span></span><code>Reverses flatten. Example: field with name &#39;a.b.c&#39; and value 4
+becomes name &#39;a&#39; and value &#39;{&quot;b&quot;: { &quot;c&quot;: 4 }}&#39;.
+Options:
+-f {a,b,c} Comma-separated list of field names to unflatten (default all).
+-s {string} Separator, defaulting to mlr --flatsep value.
+</code></pre></div>
+</div>
+<h3 id="uniq">uniq<a class="headerlink" href="#uniq" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr uniq --help</p>
+<div class="highlight"><pre><span></span><code>Prints distinct values for specified field names. With -c, same as
+count-distinct. For uniq, -f is a synonym for -g.
+
+Options:
+-g {d,e,f}    Group-by-field names for uniq counts.
+-c            Show repeat counts in addition to unique values.
+-n            Show only the number of distinct values.
+-o {name}     Field name for output count. Default &quot;count&quot;.
+-a            Output each unique record only once. Incompatible with -g.
+              With -c, produces unique records, with repeat counts for each.
+              With -n, produces only one record which is the unique-record count.
+              With neither -c nor -n, produces unique records.
+</code></pre></div>
+</div>
+<h3 id="unsparsify">unsparsify<a class="headerlink" href="#unsparsify" title="Permanent link">&para;</a></h3>
+<div class="admonition aiuto">
+<p class="admonition-title">mlr unsparsify --help</p>
+<div class="highlight"><pre><span></span><code>Usage: mlr unsparsify [options]
+Prints records with the union of field names over all input records.
+For field names absent in a given record but present in others, fills in
+a value. This verb retains all input before producing any output.
+Options:
+--fill-with {filler string}  What to fill absent fields with. Defaults to
+                            the empty string.
+-f {a,b,c} Specify field names to be operated on. Any other fields won&#39;t be
+          modified, and operation will be streaming.
+-h|--help  Show this message.
+Example: if the input is two records, one being &#39;a=1,b=2&#39; and the other
+being &#39;b=3,c=4&#39;, then the output is the two records &#39;a=1,b=2,c=&#39; and
+&#39;a=,b=3,c=4&#39;.
+</code></pre></div>
+</div>
+<p>Alcuni formati, come il <code>JSON</code>, non devono avere lo stesso numero di campi per record. Un esempio il file a seguire:</p>
+<div class="highlight"><span class="filename">input.json</span><pre><span></span><code><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sara&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dataNascita&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2000-02-22&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;altezza&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">166</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;peso&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">70.4</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;comuneNascita&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Roma&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;giulia&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;comuneNascita&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Milano&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+</code></pre></div>
+<p>Con <code>unsparsify</code>, viene di default prodotto un output in cui tutti i record hanno gli stessi campi, e l'input viene fatto diventare rettangolare (vedi <a href="../eterogeneita_record/">eterogeneità dei record</a>); laddove erano assenti viene assegnato un valore nullo.</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --json unsparsify input.json</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sara&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dataNascita&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2000-02-22&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;altezza&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">166</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;peso&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">70.4</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;comuneNascita&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Roma&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;giulia&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dataNascita&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;altezza&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;peso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;comuneNascita&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Milano&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+</code></pre></div>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Torna su
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Piede">
+      
+        
+        <a href="../flag/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Flag" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              Flag
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../dsl/" class="md-footer__link md-footer__link--next" aria-label="Prossimo: DSL" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Prossimo
+              </span>
+              DSL
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M257.981 272.971 63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"></path></svg></span> <b>a riga di comando</b> è un'idea di <a href="https://twitter.com/aborruso" target="_blank">Andrea Borruso</a> | licenza <a href="https://creativecommons.org/licenses/by/4.0/deed.it" target="_blank">CC BY 4.0</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.sections", "navigation.tracking", "navigation.indexes"], "translations": {"clipboard.copy": "Copia", "clipboard.copied": "Copiato", "search.config.lang": "it", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Cerca", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.term.missing": "Non presente", "select.version.title": "Seleziona la versione"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8aa65030.min.js"></script>
+      
+        <script src="../../js/mkdocs-charts-plugin.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/varie.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      
+    
+  </body>
+</html>

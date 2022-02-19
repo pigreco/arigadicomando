@@ -1,0 +1,1475 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Quanto è comoda la riga di comando con i dati">
+      
+      
+      
+        <link rel="canonical" href="https://arigadicomando.it/dati/esplora/">
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
+    
+    
+      
+        <title>Esplora - a riga di comando</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e8d9bf0c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700%7CFira+Code&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<!-- Open Graph / Facebook -->
+    
+        <meta property="og:title" content="Esplora" />
+    
+
+    
+        <meta property="og:type" content="website" />
+    
+
+        <meta property="og:url" content="https://arigadicomando.it/dati/esplora/" />
+
+    
+        <meta property="og:image:url" content="https://arigadicomando.it/images/preview.png" />
+    
+
+    
+        <meta property="og:image:type" content="image/png" />
+    
+
+    
+        <meta property="og:description" content="Quanto è comoda la riga di comando con i dati">
+    
+
+
+<!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://arigadicomando.it/dati/esplora/">
+    
+        <meta property="twitter:title" content="Esplora">
+    
+    
+        <meta property="twitter:description" content="Quanto è comoda la riga di comando con i dati">
+    
+
+    
+        <meta property="twitter:image" content="https://arigadicomando.it/images/preview.png">
+    
+
+        <meta property="og:locale" content="it-IT" />
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#esplora" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+  <!-- Add announcement here, including arbitrary HTML -->
+  <p>Iscriviti alla <b><a style="color:#ff9100 !important;" href="https://www.getrevue.co/profile/ondata">newsletter di onData</a></b>
+    <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>
+    </span>
+  </p>
+
+          </div>
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="a riga di comando" class="md-header__button md-logo" aria-label="a riga di comando" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M9.372 86.63c-12.496-12.5-12.496-32.76 0-45.26 12.498-12.49 32.758-12.49 45.258 0L246.6 233.4c12.5 12.5 12.5 32.7 0 45.2l-191.97 192c-12.5 12.5-32.76 12.5-45.258 0-12.496-12.5-12.496-32.7 0-45.2L178.7 256 9.372 86.63zM544 416c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h288z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            a riga di comando
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Esplora
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="preference" data-md-color-primary="blue" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Cancella" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/aborruso/arigadicomando/" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arigadicomando
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../cli/" class="md-tabs__link">
+      La CLI
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Dati
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../monografie/" class="md-tabs__link">
+        Monografie
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../partecipa/" class="md-tabs__link">
+      Partecipa
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../utilities/" class="md-tabs__link">
+      Utility
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../letture/" class="md-tabs__link">
+      Letture
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../grazie/" class="md-tabs__link">
+      Grazie
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="a riga di comando" class="md-nav__button md-logo" aria-label="a riga di comando" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M9.372 86.63c-12.496-12.5-12.496-32.76 0-45.26 12.498-12.49 32.758-12.49 45.258 0L246.6 233.4c12.5 12.5 12.5 32.7 0 45.2l-191.97 192c-12.5 12.5-32.76 12.5-45.258 0-12.496-12.5-12.496-32.7 0-45.2L178.7 256 9.372 86.63zM544 416c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h288z"/></svg>
+
+    </a>
+    a riga di comando
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/aborruso/arigadicomando/" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arigadicomando
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli/" class="md-nav__link">
+        La CLI
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Dati</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Dati" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Dati
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Esplora
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Esplora
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visualizzare" class="md-nav__link">
+    Visualizzare
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualizzare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cat" class="md-nav__link">
+    cat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head" class="md-nav__link">
+    head
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tail" class="md-nav__link">
+    tail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#less" class="md-nav__link">
+    less
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informazioni-sui-file" class="md-nav__link">
+    Informazioni sui file
+  </a>
+  
+    <nav class="md-nav" aria-label="Informazioni sui file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stat" class="md-nav__link">
+    stat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encoding" class="md-nav__link">
+    Encoding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-misure" class="md-nav__link">
+    Le "misure"
+  </a>
+  
+    <nav class="md-nav" aria-label="Le "misure"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wc" class="md-nav__link">
+    wc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miller" class="md-nav__link">
+    Miller
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../converti/" class="md-nav__link">
+        Converti
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trasforma/" class="md-nav__link">
+        Trasforma
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Monografie
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Monografie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Monografie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../monografie/" class="md-nav__link">
+        Introduzione
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../miller/">Miller</a>
+          
+            <label for="__nav_4_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Miller" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Miller
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_2" type="checkbox" id="__nav_4_2_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_2">
+          Formati
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Formati" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Formati
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miller/formati/" class="md-nav__link">
+        Gestione formati
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miller/eterogeneita_record/" class="md-nav__link">
+        Eterogeneità record
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miller/flag/" class="md-nav__link">
+        Flag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miller/verbi/" class="md-nav__link">
+        Verbi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miller/dsl/" class="md-nav__link">
+        DSL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miller/ricette/" class="md-nav__link">
+        Ricette
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miller/contributi/" class="md-nav__link">
+        Contributi
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../partecipa/" class="md-nav__link">
+        Partecipa
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utilities/" class="md-nav__link">
+        Utility
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../letture/" class="md-nav__link">
+        Letture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../grazie/" class="md-nav__link">
+        Grazie
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visualizzare" class="md-nav__link">
+    Visualizzare
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualizzare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cat" class="md-nav__link">
+    cat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head" class="md-nav__link">
+    head
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tail" class="md-nav__link">
+    tail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#less" class="md-nav__link">
+    less
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informazioni-sui-file" class="md-nav__link">
+    Informazioni sui file
+  </a>
+  
+    <nav class="md-nav" aria-label="Informazioni sui file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stat" class="md-nav__link">
+    stat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encoding" class="md-nav__link">
+    Encoding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-misure" class="md-nav__link">
+    Le "misure"
+  </a>
+  
+    <nav class="md-nav" aria-label="Le "misure"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wc" class="md-nav__link">
+    wc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miller" class="md-nav__link">
+    Miller
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/aborruso/arigadicomando/edit/master/docs/dati/esplora.md" title="Modifica" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+  
+
+
+
+<h1 id="esplora">Esplora<a class="headerlink" href="#esplora" title="Permanent link">&para;</a></h1>
+<p>In questo spazio facciamo riferimento a <strong>dati</strong> che sono <strong>archiviati</strong> come <strong>testo</strong>, una modalità molto diffusa (si pensi ai formati <code>JSON</code>, <code>XML</code>, <code>CSV</code>, <code>TTL</code>, <code>YAML</code>, ecc.) e per la quale gli strumenti a riga di comando hanno supporto nativo: si aspettano <strong>stringhe di testo come <code>input</code></strong>.</p>
+<p>Tanti strumenti di base e nativi sono <strong>impareggiabili</strong> nell'esplorare file di testo, in termini di <strong>rapidità</strong>, <strong>opzioni</strong> e <strong>modalità</strong> per farlo.<br>
+Sono spesso (in modo evidente) più comodi della gran parte di quelli con interfaccia grafica.</p>
+<h2 id="visualizzare">Visualizzare<a class="headerlink" href="#visualizzare" title="Permanent link">&para;</a></h2>
+<p>Uno dei modi per conoscere un file è quello di <strong>visualizzarne</strong> i <strong>contenuti</strong>. Queste sono alcune delle <em>utility</em> classiche per farlo nel terminale.</p>
+<h3 id="cat">cat<a class="headerlink" href="#cat" title="Permanent link">&para;</a></h3>
+<p>L'<em>utility</em> tipica è <a href="../../utilities/#cat"><strong><code>cat</code></strong></a> che "stampa" a schermo uno o più file (in questo caso concatena e stampa).</p>
+<p>Se si vuole visualizzare il file <a href="../../data/colored-shapes.csv"><code>colored-shapes.csv</code></a>, il comando è semplicemente:</p>
+<div class="highlight"><pre><span></span><code>cat colored-shapes.csv
+</code></pre></div>
+<p>Vengono però <strong>stampate</strong> a schermo <strong>tutte le righe</strong>, e con <strong>file molto grandi</strong> può essere un po' <strong>lento</strong> e sopratutto <strong>poco informativo</strong>, perché non si leggerà l'intestazione che in alcuni formati (come i <code>CSV</code>) è un elemento di esplorazione dei dati prezioso.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Esiste anche la versione di <code>cat</code>, che consente di leggere anche file di testo compressi: <a href="https://man7.org/linux/man-pages/man1/zcat.1p.html"><code>zcat</code></a>.</p>
+</div>
+<h3 id="head">head<a class="headerlink" href="#head" title="Permanent link">&para;</a></h3>
+<p>Per <strong>visualizzare</strong> soltanto le <strong>prime righe</strong> c'è l'<em>utility</em> <a href="../../utilities/#head"><strong><code>head</code></strong></a>, che in maniere predefinita stampa le prime 10 righe:</p>
+<div class="admonition comando">
+<p class="admonition-title">head colored-shapes.csv</p>
+<div class="highlight"><pre><span></span><code>color,shape,flag,i,u,v,w,x
+yellow,triangle,1,56,0.632170,0.988721,0.436498,5.798188
+red,square,1,80,0.219668,0.001257,0.792778,2.944117
+red,circle,1,84,0.209017,0.290052,0.138103,5.065034
+red,square,0,243,0.956274,0.746720,0.775542,7.117831
+purple,triangle,0,257,0.435535,0.859129,0.812290,5.753095
+red,square,0,322,0.201551,0.953110,0.771991,5.612050
+purple,triangle,0,328,0.684281,0.582372,0.801405,5.805148
+yellow,circle,1,370,0.603365,0.423708,0.639785,7.006414
+yellow,circle,1,440,0.285656,0.833516,0.635058,6.350036
+</code></pre></div>
+</div>
+<p>Con l'opzione <code>-n numeroDiRighe</code> è possibile scegliere il numero di righe da visualizzare:</p>
+<div class="admonition comando">
+<p class="admonition-title">head -n 3 colored-shapes.csv</p>
+<div class="highlight"><pre><span></span><code>color,shape,flag,i,u,v,w,x
+yellow,triangle,1,56,0.632170,0.988721,0.436498,5.798188
+red,square,1,80,0.219668,0.001257,0.792778,2.944117
+</code></pre></div>
+</div>
+<p>Per un formato come il <code>CSV</code> il comando <code>head</code> è prezioso, perché nella gran parte dei casi restituisce una buona visione del file: qual è il separatore dei campi, quali sono i campi, qual è il separatore dei decimali (se presenti), se ci sono caratteri speciali (come le <code>"</code>), ecc..</p>
+<h3 id="tail">tail<a class="headerlink" href="#tail" title="Permanent link">&para;</a></h3>
+<p>Ma è bene poter <strong>vedere</strong> anche le <strong>ultime righe</strong>, per valutare se la struttura è identica a quella di intestazione e se ci sono "strani" contenuti (alle volte purtroppo ci sono note di testo, campi calcolati).<br>
+Il comando è <a href="../../utilities/#tail"><strong><code>tail</code></strong></a>:</p>
+<div class="highlight"><pre><span></span><code>tail colored-shapes.csv
+</code></pre></div>
+<p>Di default, le ultime 10 righe; si può definire quante se ne desiderano sempre con l'opzione <code>-n numeroDiRighe</code>.</p>
+<h3 id="less">less<a class="headerlink" href="#less" title="Permanent link">&para;</a></h3>
+<p>Un altro strumento consigliato (ce sono tanti altri), per visualizzare ed esplorare il contenuto di un file di testo è <a href="../../utilities/#less"><strong><code>less</code></strong></a>, che consente di <strong>sfogliare</strong> il contenuto <strong>schermata dopo schermata</strong>, man mano che lo schermo viene riempito:</p>
+<div class="highlight"><pre><span></span><code>less colored-shapes.csv
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Alcune informazioni di base su <code>less</code></p>
+<ul>
+<li>con l'o"pzione <code>-S</code> si disabilita il <em>world wrap</em></li>
+<li>con <span class="keys"><kbd class="key-space">Space</kbd></span> si scorrono le schermate (vedi immagine sotto);</li>
+<li>con <span class="keys"><kbd class="key-slash">/</kbd></span> si attiva la ricerca di una stringa;</li>
+<li>con <span class="keys"><kbd>n</kbd></span> il risultato successivo della ricerca;</li>
+<li>con <span class="keys"><kbd>N</kbd></span> il risultato successivo della ricerca;</li>
+<li>con <span class="keys"><kbd>G</kbd></span> si va alla fine del file;</li>
+<li>con <span class="keys"><kbd>g</kbd></span> si va all'inizio;</li>
+<li>con <span class="keys"><kbd class="key-q">Q</kbd></span> si esce da <code>less</code>.</li>
+</ul>
+</div>
+<figure>
+<p><img alt="" src="../../images/less.gif" /></p>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In questo modo - con <code>head</code>, <code>tail</code> e <code>less</code> - è possibile <strong>esplorare</strong> anche <strong>file</strong> di testo di <strong>grandi dimensioni</strong>.</p>
+</div>
+<p>Le <em>utility</em> di questa sezione però fanno <strong>soltanto visualizzare</strong> contenuti, non estraggono informazioni (numero di righe, colonne, <em>encoding</em>, dimensioni, ecc..).</p>
+<h2 id="informazioni-sui-file">Informazioni sui file<a class="headerlink" href="#informazioni-sui-file" title="Permanent link">&para;</a></h2>
+<h3 id="file">file<a class="headerlink" href="#file" title="Permanent link">&para;</a></h3>
+<p>L'utility di base, preinstallata in tutti i sistemi Linux è <a href="../../utilities/#file"><strong><code>file</code></strong></a>, che è utile per avere <strong>informazioni</strong> sul <strong>tipo</strong> di <strong>file</strong>.</p>
+<div class="admonition comando">
+<p class="admonition-title">file base_category.csv</p>
+<div class="highlight"><pre><span></span><code>base_category.csv: CSV text
+</code></pre></div>
+</div>
+<p>Con l'opzione <code>-i</code> si ottengono informazioni sull'<a href="#encoding"><strong><em>encoding</em></strong></a>.</p>
+<div class="admonition comando">
+<p class="admonition-title">file -i encoding_iso-8859-1.csv</p>
+<div class="highlight"><pre><span></span><code>encoding_iso-8859-1.csv: application/csv; charset=iso-8859-1
+</code></pre></div>
+</div>
+<p>Conoscere l'<em>encoding</em> di un file di testo strutturato, da usare per fare analisi e trasformazione di dati è un elemento essenziale, perché se "mappato" scorrettamente porta a una lettura errata dei contenuti del file.</p>
+<h3 id="stat">stat<a class="headerlink" href="#stat" title="Permanent link">&para;</a></h3>
+<p><a href="../../utilities/#stat"><strong><code>stat</code></strong></a> fornisce moltissime informazioni sui file, come le dimensioni, i permessi, la data di modifica, ecc.:</p>
+<div class="admonition comando">
+<p class="admonition-title">stat encoding_iso-8859-1.csv</p>
+<div class="highlight"><pre><span></span><code>File: encoding_iso-8859-1.csv
+Size: 33              Blocks: 0          IO Block: 512    regular file
+Device: 2dh/45d Inode: 266275327968286903  Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/userName)   Gid: ( 1000/userName)
+Access: 2022-02-19 09:17:54.648775600 +0100
+Modify: 2022-02-19 09:17:54.637142300 +0100
+Change: 2022-02-19 12:44:32.134296200 +0100
+Birth: -
+</code></pre></div>
+</div>
+<h2 id="encoding">Encoding<a class="headerlink" href="#encoding" title="Permanent link">&para;</a></h2>
+<p>Conoscere la <strong>codifica</strong> dei <strong>caratteri</strong> è un elemento chiave per la loro lettura. Specie con formati di testo come il <code>CSV</code>, in cui le informazioni sull'<em>encoding</em> non sono scritte all'interno del <em>file</em> (se va bene sono riportate in un testo che descrive il <em>file</em>).</p>
+<p>Si può provare - come visto sopra - a estrapolare con <a href="./#file"><code>file</code></a> (o con <a href="../../utilities/#chardet"><code>chardet</code></a>).</p>
+<p>Un'esperienza comune di barriera all'uso di un file di testo, di cui non si conosce l'<em>encoding</em>, è quella ad esempio della errata lettura dei caratteri accentati, in cui un file come <a href="../../data/encoding_iso-8859-1.csv">questo</a>, viene letto male (<code>Cefal�</code>, sarebbe <code>Cefalù</code>):</p>
+<div class="highlight"><span class="filename">encoding_iso-8859-1.csv</span><pre><span></span><code>id,nomeComune
+1,Cefal�
+2,Milano
+3,Orr�
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Spesso le <em>utility</em> hanno impostato come <em>encoding</em> standard di lettura l'<a href="https://it.wikipedia.org/wiki/UTF-8?oldformat=true"><code>UTF-8</code></a>. Per leggere correttamente il file di sopra se ne può provare a estrapolare la codifica corretta con <a href="./#file"><code>file</code></a> (o con <a href="../../utilities/#chardet"><code>chardet</code></a>) e poi se serve <a href="../trasforma/#encoding">trasformarla</a> in quella di <em>output</em> desiderata.</p>
+</div>
+<h2 id="le-misure">Le "misure"<a class="headerlink" href="#le-misure" title="Permanent link">&para;</a></h2>
+<p>A un file testuale di dati è importante "<strong>prendere le misure</strong>", come il numero di righe, il numero di caratteri, numero di colonne (se è un file a griglia tabellare), ecc..</p>
+<h3 id="wc">wc<a class="headerlink" href="#wc" title="Permanent link">&para;</a></h3>
+<p><a href="../../utilities/#wc"><strong><code>wc</code></strong></a> è una delle <em>utility</em> più importanti per "<strong>esplorare</strong>" <strong>file di testo</strong>.<br>Questo il <a href="../../data/wc-01.csv">file</a> di input di esempio:</p>
+<div class="highlight"><span class="filename">wc-01.csv</span><pre><span></span><code>id,titolo
+1,La spada nella roccia
+2,Il mago di oz
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>comando</th>
+<th>output</th>
+<th>descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wc wc-01.csv</code></td>
+<td><code>3 9 50 wc-01.csv</code></td>
+<td>numero di righe, parole e <em>byte</em></td>
+</tr>
+<tr>
+<td><code>wc -l wc-01.csv</code></td>
+<td><code>3 wc-01.csv</code></td>
+<td>numero di righe</td>
+</tr>
+<tr>
+<td><code>wc -w wc-01.csv</code></td>
+<td><code>9 wc-01.csv</code></td>
+<td>numero di parole (separate da spazio)</td>
+</tr>
+<tr>
+<td><code>wc -c wc-01.csv</code></td>
+<td><code>50 wc-01.csv</code></td>
+<td>numero di <em>byte</em></td>
+</tr>
+<tr>
+<td><code>wc --max-line-length wc-01.csv</code></td>
+<td><code>23 wc-01.csv</code></td>
+<td>il numero di caratteri della riga più lunga</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Se si vuole <strong>soltanto</strong> il <strong>numero</strong> di <strong>righe</strong>, <strong>senza</strong> il <strong>nome</strong> del <strong>file</strong>, il comando è <code>&lt;wc-01.csv wc -l</code></p>
+</div>
+<p><code>wc</code> <strong>non</strong> è però un comando che <strong>interpreta</strong> il tipo di <strong>formato</strong>, e quindi in presenza di un file di input come <a href="../../data/wc-02.csv">questo sottostante</a> - un CSV di due <em>record</em> (più intestazione) e due colonne - il conteggio delle righe sarà pari a 8.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>FieldA,FieldB
+&quot;Come
+Quando
+Fuori
+Piove&quot;,Ciao
+Miao,&quot;Uno
+Due
+Tre&quot;
+</code></pre></div>
+</td></tr></table>
+<p>Questo file - vedi anteprima sottostante - contiene dei ritorni a capo nelle celle, e per ognuno viene conteggiata una riga.</p>
+<table>
+<thead>
+<tr>
+<th>FieldA</th>
+<th>FieldB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Come<br>Quando<br>Fuori<br>Piove</td>
+<td>Ciao</td>
+</tr>
+<tr>
+<td>Miao</td>
+<td>Uno<br>Due<br>Tre</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione</p>
+<p>Per poter <strong>conteggiare</strong> il <strong>numero</strong> di <strong><em>record</em></strong> di un <strong><code>CSV</code></strong> come questo, è necessario <strong>usare</strong> una <strong><em>utility</em></strong> che <strong>tenga</strong> <strong>conto</strong> delle caratteristiche del <strong>formato</strong> (<em>CSV aware</em>), come ad esempio il fatto che in una cella ci possono essere più righe.</p>
+</div>
+<h3 id="miller">Miller<a class="headerlink" href="#miller" title="Permanent link">&para;</a></h3>
+<p><strong>Miller</strong> è una straordinaria <em>utility</em> per leggere, analizzare e trasformare <strong>file di testo strutturati</strong>.<br>
+È capace di interpretare le caratteristiche dei <a href="../../miller/formati/#elenco-formati">formati che supporta</a> (<code>CSV</code>, <code>TSV</code>, <code>JSON</code>, ecc.) e quindi ad esempio <strong>contare</strong> correttamente il <strong>numero</strong> di <strong><em>record</em></strong> di un file <code>CSV</code>, <strong>anche</strong> in presenza di <strong>celle</strong> con <strong>ritorni a capo</strong> (vedi esempio soprastante).</p>
+<div class="admonition comando">
+<p class="admonition-title">mlr --csv tail -n 1 then put '$righe=NR' then cut -f righe wc-02.csv</p>
+<div class="highlight"><pre><span></span><code>righe
+2
+</code></pre></div>
+</div>
+<p>Alcune note:</p>
+<ul>
+<li><code>--csv</code> per impostare formato di <em>input</em> e <em>output</em>;</li>
+<li><code>tail -n 1</code> per estrarre l'ultima riga;</li>
+<li><code>put '$righe=NR'</code> per creare il campo <code>righe</code> e valorizzarlo con il numero di riga della riga corrente - <code>NR</code> - che qui è l'ultima;</li>
+<li><code>cut -f righe</code>, per avere in output soltanto il campo precedentemente creato.</li>
+</ul>
+<p>Se si vuole in output anche il <strong>numero</strong> di <strong>colonne</strong>, il comando si può modificare in questo modo:</p>
+<div class="highlight"><pre><span></span><code>mlr --csv tail -n 1 then put &#39;$righe=NR;$colonne=NF-1&#39; then cut -f righe,colonne wc-02.csv
+</code></pre></div>
+<p>Con <code>$colonne=NF-1</code> è stato aggiunto un campo che conta il numero di campi - <code>NF</code> - presenti nella riga corrente, a cui è stato sottratto 1, perché è stata aggiunta la colonna che dà conto del numero di righe, che non fa parte delle colonne pre esistenti nel <em>file</em> di <em>input</em>.</p>
+<p>In <em>output</em>:</p>
+<div class="highlight"><pre><span></span><code>righe,colonne
+2,2
+</code></pre></div>
+<p>Un esempio più eclatante è quando il file di input è un <code>JSON</code> come quello sottostante, composto da 2 "record" (qui è improprio come termine, ma per dare l'idea), ognuno con due campi.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;titolo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;La spada nella roccia&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;titolo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Il mago di oz&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<p>Il comando</p>
+<div class="highlight"><pre><span></span><code>mlr --j2c tail -n <span class="m">1</span> <span class="k">then</span> put <span class="s1">&#39;$righe=NR;$colonne=NF-1&#39;</span> <span class="k">then</span> cut -f righe,colonne input.json
+</code></pre></div>
+<p>restituirà sempre (<code>--j2c</code> è per trasformare l'input in <code>JSON</code> in <code>CSV</code>)</p>
+<div class="highlight"><pre><span></span><code>righe,colonne
+2,2
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A Miller è dedicata una <a href="../../miller/">monografia</a> di questo sito.</p>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Torna su
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Piede">
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Introduzione" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              Introduzione
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../converti/" class="md-footer__link md-footer__link--next" aria-label="Prossimo: Converti" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Prossimo
+              </span>
+              Converti
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M257.981 272.971 63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"></path></svg></span> <b>a riga di comando</b> è un'idea di <a href="https://twitter.com/aborruso" target="_blank">Andrea Borruso</a> | licenza <a href="https://creativecommons.org/licenses/by/4.0/deed.it" target="_blank">CC BY 4.0</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.sections", "navigation.tracking", "navigation.indexes"], "translations": {"clipboard.copy": "Copia", "clipboard.copied": "Copiato", "search.config.lang": "it", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Cerca", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.term.missing": "Non presente", "select.version.title": "Seleziona la versione"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8aa65030.min.js"></script>
+      
+        <script src="../../js/mkdocs-charts-plugin.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/varie.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      
+    
+  </body>
+</html>
